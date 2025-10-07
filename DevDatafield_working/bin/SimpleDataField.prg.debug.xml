@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="E:\GarminTacticalHUD\StarterProject\SimpleDataField\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="E:\\GarminTacticalHUD\\StarterProject\\SimpleDataField\\source\\SimpleDataFieldApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
+        <entry filename="E:\\GarminTacticalHUD\\StarterProject\\SimpleDataField\\source\\SimpleDataFieldApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
+        <entry filename="e:\\GarminTacticalHUD\\StarterProject\\SimpleDataField\\bin\\gen\\006-B4565-00\\source\\Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435481" symbol="&lt;init&gt;"/>
+        <entry filename="E:\\GarminTacticalHUD\\StarterProject\\SimpleDataField\\source\\SimpleDataFieldView.mc" id="3" lineNum="4" parent="globals/SimpleDataFieldView" pc="268435501" symbol="&lt;init&gt;"/>
+        <entry filename="E:\\GarminTacticalHUD\\StarterProject\\SimpleDataField\\source\\SimpleDataFieldApp.mc" id="4" lineNum="5" parent="globals/SimpleDataFieldApp" pc="268435513" symbol="&lt;init&gt;"/>
+        <entry filename="E:\\GarminTacticalHUD\\StarterProject\\SimpleDataField\\source\\SimpleDataFieldView.mc" id="5" lineNum="12" parent="globals/SimpleDataFieldView" pc="268435525" symbol="compute"/>
+        <entry filename="E:\\GarminTacticalHUD\\StarterProject\\SimpleDataField\\source\\SimpleDataFieldView.mc" id="5" lineNum="13" parent="globals/SimpleDataFieldView" pc="268435528" symbol="compute"/>
+        <entry filename="E:\\GarminTacticalHUD\\StarterProject\\SimpleDataField\\source\\SimpleDataFieldView.mc" id="5" lineNum="14" parent="globals/SimpleDataFieldView" pc="268435558" symbol="compute"/>
+        <entry filename="E:\\GarminTacticalHUD\\StarterProject\\SimpleDataField\\source\\SimpleDataFieldView.mc" id="5" lineNum="15" parent="globals/SimpleDataFieldView" pc="268435568" symbol="compute"/>
+        <entry filename="E:\\GarminTacticalHUD\\StarterProject\\SimpleDataField\\source\\SimpleDataFieldView.mc" id="6" lineNum="6" parent="globals/SimpleDataFieldView" pc="268435571" symbol="initialize"/>
+        <entry filename="E:\\GarminTacticalHUD\\StarterProject\\SimpleDataField\\source\\SimpleDataFieldView.mc" id="6" lineNum="7" parent="globals/SimpleDataFieldView" pc="268435573" symbol="initialize"/>
+        <entry filename="E:\\GarminTacticalHUD\\StarterProject\\SimpleDataField\\source\\SimpleDataFieldView.mc" id="6" lineNum="8" parent="globals/SimpleDataFieldView" pc="268435585" symbol="initialize"/>
+        <entry filename="E:\\GarminTacticalHUD\\StarterProject\\SimpleDataField\\source\\SimpleDataFieldApp.mc" id="7" lineNum="12" parent="globals/SimpleDataFieldApp" pc="268435598" symbol="onStart"/>
+        <entry filename="E:\\GarminTacticalHUD\\StarterProject\\SimpleDataField\\source\\SimpleDataFieldApp.mc" id="8" lineNum="20" parent="globals/SimpleDataFieldApp" pc="268435601" symbol="getInitialView"/>
+        <entry filename="E:\\GarminTacticalHUD\\StarterProject\\SimpleDataField\\source\\SimpleDataFieldApp.mc" id="8" lineNum="21" parent="globals/SimpleDataFieldApp" pc="268435603" symbol="getInitialView"/>
+        <entry filename="E:\\GarminTacticalHUD\\StarterProject\\SimpleDataField\\source\\SimpleDataFieldApp.mc" id="9" lineNum="7" parent="globals/SimpleDataFieldApp" pc="268435629" symbol="initialize"/>
+        <entry filename="E:\\GarminTacticalHUD\\StarterProject\\SimpleDataField\\source\\SimpleDataFieldApp.mc" id="9" lineNum="8" parent="globals/SimpleDataFieldApp" pc="268435631" symbol="initialize"/>
+        <entry filename="E:\\GarminTacticalHUD\\StarterProject\\SimpleDataField\\source\\SimpleDataFieldApp.mc" id="10" lineNum="16" parent="globals/SimpleDataFieldApp" pc="268435644" symbol="onStop"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="8" symbol="AppName"/>
+        <entry id="4" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="8389137" method="true" symbol="compute"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="7" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="6" object="true" symbol="SimpleDataFieldView"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="5" object="true" symbol="SimpleDataFieldApp"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435570" name="info" stackId="1" startPc="268435525"/>
+        <entry endPc="268435570" name="ms" stackId="2" startPc="268435528"/>
+        <entry endPc="268435570" name="kts" stackId="3" startPc="268435528"/>
+    </localVars>
+    <deviceInfo deviceVersion="8fc30743a4191ec19bcafa28e3ffcc2b5a958a17" partNumber="006-B4565-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="49" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/Rez" offset="116" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/SimpleDataFieldView" offset="160" parentId="globals" symbolId="SimpleDataFieldView" type="class"/>
+        <dataEntry label="globals/SimpleDataFieldApp" offset="213" parentId="globals" symbolId="SimpleDataFieldApp" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="284" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="319" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435480" name="getApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435500" name="&lt;init&gt;" parent="Rez" startPc="268435481">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="SimpleDataFieldView" startPc="268435501">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="SimpleDataFieldApp" startPc="268435513">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435570" name="compute" parent="SimpleDataFieldView" startPc="268435525">
+            <param id="info"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435597" name="initialize" parent="SimpleDataFieldView" startPc="268435571">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435600" name="onStart" parent="SimpleDataFieldApp" startPc="268435598">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435628" name="getInitialView" parent="SimpleDataFieldApp" startPc="268435601">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435643" name="initialize" parent="SimpleDataFieldApp" startPc="268435629">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435646" name="onStop" parent="SimpleDataFieldApp" startPc="268435644">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

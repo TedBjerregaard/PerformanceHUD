@@ -1,0 +1,89 @@
+[ @file = "E:\GarminTacticalHUD\StarterProject\SimpleDataField\source\SimpleDataFieldView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Activity,1,14,22]; ]
+import Toybox.Activity;
+[ @file = "E:\GarminTacticalHUD\StarterProject\SimpleDataField\source\SimpleDataFieldView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "E:\GarminTacticalHUD\StarterProject\SimpleDataField\source\SimpleDataFieldView.mc"; @line = 4; @symbol_classdef = [SimpleDataFieldView,4,6,25]; @symbol_extends<0> = [WatchUi,4,34,41]; @symbol_extends<1> = [SimpleDataField,4,42,57]; ]
+class SimpleDataFieldView extends WatchUi.SimpleDataField {
+    [ @file = "E:\GarminTacticalHUD\StarterProject\SimpleDataField\source\SimpleDataFieldView.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "E:\GarminTacticalHUD\StarterProject\SimpleDataField\source\SimpleDataFieldView.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "E:\GarminTacticalHUD\StarterProject\SimpleDataField\source\SimpleDataFieldView.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
+    function initialize() as Void {
+E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_6_26_9_4_start:
+[ "E:\GarminTacticalHUD\StarterProject\SimpleDataField\source\SimpleDataFieldView.mc" 7 8 ]
+        symbol [ SimpleDataField %tmp.2 7 8 23 ];
+        %tmp.2 = getv ? :SimpleDataField;
+        symbol [ initialize %tmp.3 7 24 34 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "E:\GarminTacticalHUD\StarterProject\SimpleDataField\source\SimpleDataFieldView.mc" 8 8 ]
+        %tmp.4 = "SOG";
+        symbol [ label ? 8 8 13 ];
+        putv self :label %tmp.4;
+E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_6_26_9_4_stop:
+    }
+    [ @file = "E:\GarminTacticalHUD\StarterProject\SimpleDataField\source\SimpleDataFieldView.mc"; @line = 12; @symbol_functiondef = [compute,12,13,20]; @symbol_param<0> = [info,12,21,25]; @symbol_param<0>_type<0> = [Activity,12,29,37]; @symbol_param<0>_type<1> = [Info,12,38,42]; ]
+    function compute(info as Activity.Info) {
+E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_12_44_16_4_start:
+[ "E:\GarminTacticalHUD\StarterProject\SimpleDataField\source\SimpleDataFieldView.mc" 13 8 ]
+        [ "E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_12_44_16_4_start" "E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_12_44_16_4_stop" ]
+        %ms.1 = local;
+        symbol [ ms %ms.1 13 12 14 ];
+E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_13_17_13_83_begin:
+E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_13_18_13_55_begin:
+        %tmp.1 = lgetv %info;
+        symbol [ info %tmp.1 13 18 22 ];
+        %tmp.2 = null;
+        %tmp.3 = ne %tmp.1 %tmp.2;
+        bf %tmp.3 @E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_13_17_13_83_false;
+E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_13_34_13_55_true:
+        %tmp.4 = lgetv %info;
+        symbol [ info %tmp.4 13 34 38 ];
+        %tmp.5 = as %tmp.4 { (!Null) };
+        symbol [ currentSpeed %tmp.6 13 39 51 ];
+        %tmp.6 = getv %tmp.5 :currentSpeed;
+        %tmp.7 = null;
+        %tmp.8 = ne %tmp.6 %tmp.7;
+        push %tmp.8;
+E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_13_34_13_55_end:
+        %tmp.9 = phi [%tmp.3 @E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_13_18_13_55_begin] [%tmp.8 @E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_13_34_13_55_true] [%tmp.9 @E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_13_34_13_55_end];
+        bf %tmp.9 @E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_13_17_13_83_false;
+E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_13_17_13_83_true:
+        %tmp.10 = lgetv %info;
+        symbol [ info %tmp.10 13 63 67 ];
+        %tmp.11 = as %tmp.10 { (!Null) };
+        symbol [ currentSpeed %tmp.12 13 68 80 ];
+        %tmp.12 = getv %tmp.11 :currentSpeed;
+        push %tmp.12;
+        goto @E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_13_17_13_83_end;
+E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_13_17_13_83_false:
+        %tmp.13 = 0.0;
+        push %tmp.13;
+E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_13_17_13_83_end:
+        %tmp.14 = phi [%tmp.9 @E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_13_17_13_83_begin] [%tmp.12 @E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_13_17_13_83_true] [%tmp.13 @E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_13_17_13_83_false] [%tmp.14 @E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_13_17_13_83_end];
+        lputv %ms.1 %tmp.14;
+        symbol [ ms %ms.1 13 12 14 ];
+[ "E:\GarminTacticalHUD\StarterProject\SimpleDataField\source\SimpleDataFieldView.mc" 14 8 ]
+        [ "E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_12_44_16_4_start" "E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_12_44_16_4_stop" ]
+        %kts.2 = local;
+        symbol [ kts %kts.2 14 12 15 ];
+        %tmp.15 = lgetv %ms.1;
+        symbol [ ms %tmp.15 14 18 20 ];
+        %tmp.16 = 1.943844;
+        %tmp.17 = mul %tmp.15 %tmp.16;
+        lputv %kts.2 %tmp.17;
+        symbol [ kts %kts.2 14 12 15 ];
+[ "E:\GarminTacticalHUD\StarterProject\SimpleDataField\source\SimpleDataFieldView.mc" 15 8 ]
+        %tmp.18 = lgetv %kts.2;
+        symbol [ kts %tmp.18 15 15 18 ];
+        ret %tmp.18;
+E__GarminTacticalHUD_StarterProject_SimpleDataField_source_SimpleDataFieldView_mc_12_44_16_4_stop:
+    }
+}
+[ @file = "E:\GarminTacticalHUD\StarterProject\SimpleDataField\source\SimpleDataFieldView.mc"; @line = 1; ]
+<init> {
+}
