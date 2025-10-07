@@ -1,0 +1,842 @@
+[ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Math,1,13,17]; @symbol_usingAlias = [M,1,21,22]; ]
+using Toybox.Math as :M;
+[ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 3; @symbol_classdef = [CircularAvg,3,6,17]; ]
+class CircularAvg {
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 4; @position = 8; @symbol_vardef = [s,4,8,9]; ]
+    var s = 0.0;
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 5; @position = 8; @symbol_vardef = [c,5,8,9]; ]
+    var c = 0.0;
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 6; @position = 8; @symbol_vardef = [n,6,8,9]; ]
+    var n = 0;
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 8; @symbol_functiondef = [add,8,13,16]; @symbol_param<0> = [rad,8,17,20]; @symbol_param<0>_type<0> = [Float,8,24,29]; ]
+    function add(rad as Float) as Void {
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_8_39_12_4_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 9 8 ]
+        symbol [ s %tmp.1 9 8 9 ];
+        %tmp.1 = getv self :s;
+        symbol [ M %tmp.2 9 13 14 ];
+        %tmp.2 = getm $.Toybox.Math;
+        symbol [ sin %tmp.3 9 15 18 ];
+        %tmp.3 = getv function %tmp.2 :sin;
+        %tmp.4 = lgetv %rad;
+        symbol [ rad %tmp.4 9 19 22 ];
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        %tmp.6 = add %tmp.1 %tmp.5;
+        symbol [ s ? 9 8 9 ];
+        putv self :s dup %tmp.6;
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 10 8 ]
+        symbol [ c %tmp.7 10 8 9 ];
+        %tmp.7 = getv self :c;
+        symbol [ M %tmp.8 10 13 14 ];
+        %tmp.8 = getm $.Toybox.Math;
+        symbol [ cos %tmp.9 10 15 18 ];
+        %tmp.9 = getv function %tmp.8 :cos;
+        %tmp.10 = lgetv %rad;
+        symbol [ rad %tmp.10 10 19 22 ];
+        %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
+        %tmp.12 = add %tmp.7 %tmp.11;
+        symbol [ c ? 10 8 9 ];
+        putv self :c dup %tmp.12;
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 11 8 ]
+        symbol [ n %tmp.13 11 8 9 ];
+        %tmp.13 = getv self :n;
+        %tmp.14 = 1;
+        %tmp.15 = add %tmp.13 %tmp.14;
+        symbol [ n ? 11 8 9 ];
+        putv self :n dup %tmp.15;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_8_39_12_4_stop:
+    }
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 14; @symbol_functiondef = [mean,14,13,17]; @symbol_return<0> = [Float,14,23,28]; ]
+    function mean() as Float {
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_14_29_16_4_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 15 8 ]
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_15_15_15_52_begin:
+        symbol [ n %tmp.2 15 16 17 ];
+        %tmp.2 = getv ? :n;
+        %tmp.3 = 0;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_15_15_15_52_false;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_15_15_15_52_true:
+        %tmp.5 = 0.0;
+        push %tmp.5;
+        goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_15_15_15_52_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_15_15_15_52_false:
+        symbol [ M %tmp.6 15 32 33 ];
+        %tmp.6 = getm $.Toybox.Math;
+        symbol [ atan2 %tmp.7 15 34 39 ];
+        %tmp.7 = getv function %tmp.6 :atan2;
+        symbol [ s %tmp.9 15 40 41 ];
+        %tmp.9 = getv ? :s;
+        symbol [ n %tmp.11 15 44 45 ];
+        %tmp.11 = getv ? :n;
+        %tmp.12 = div %tmp.9 %tmp.11;
+        symbol [ c %tmp.14 15 47 48 ];
+        %tmp.14 = getv ? :c;
+        symbol [ n %tmp.16 15 51 52 ];
+        %tmp.16 = getv ? :n;
+        %tmp.17 = div %tmp.14 %tmp.16;
+        %tmp.18 = invoke %tmp.6 %tmp.7(%tmp.12, %tmp.17);
+        push %tmp.18;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_15_15_15_52_end:
+        %tmp.19 = phi [%tmp.4 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_15_15_15_52_begin] [%tmp.5 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_15_15_15_52_true] [%tmp.18 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_15_15_15_52_false] [%tmp.19 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_15_15_15_52_end];
+        ret %tmp.19;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_14_29_16_4_stop:
+    }
+}
+[ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 19; @symbol_classdef = [TacticalEngine,19,6,20]; ]
+class TacticalEngine {
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 19; ]
+    <init> {
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 29 8 ]
+        symbol [ CircularAvg %tmp.23 29 23 34 ];
+        %tmp.23 = getv ? :CircularAvg;
+        %tmp.20 = newc %tmp.23 ();
+        putv self :rollPort %tmp.20;
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 30 8 ]
+        symbol [ CircularAvg %tmp.27 30 23 34 ];
+        %tmp.27 = getv ? :CircularAvg;
+        %tmp.24 = newc %tmp.27 ();
+        putv self :rollStar %tmp.24;
+    }
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 19; ]
+    static
+    <init> {
+    }
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 21; @position = 10; @symbol_constdef = [VMIN,21,10,14]; ]
+    const VMIN = 0.5;
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 22; @position = 10; @symbol_constdef = [TURN_RATE_MIN,22,10,23]; ]
+    const TURN_RATE_MIN = 0.15;
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 23; @position = 10; @symbol_constdef = [LIFT_DEG,23,10,18]; ]
+    const LIFT_DEG = 4.0;
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 26; @position = 8; @symbol_vardef = [twd,26,8,11]; ]
+    var twd = null;
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 27; @position = 8; @symbol_vardef = [lastCog,27,8,15]; ]
+    var lastCog = null;
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 28; @position = 8; @symbol_vardef = [lastTs,28,8,14]; ]
+    var lastTs = null;
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 29; @position = 8; @symbol_vardef = [rollPort,29,8,16]; ]
+    var rollPort;
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 30; @position = 8; @symbol_vardef = [rollStar,30,8,16]; ]
+    var rollStar;
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 31; @position = 8; @symbol_vardef = [tackSign,31,8,16]; ]
+    var tackSign = 0;
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 33; @symbol_functiondef = [step,33,13,17]; @symbol_param<0> = [ts,33,18,20]; @symbol_param<0>_type<0> = [Number,33,24,30]; @symbol_param<1> = [sog,33,32,35]; @symbol_param<1>_type<0> = [Float,33,39,44]; @symbol_param<2> = [cog,33,46,49]; @symbol_param<2>_type<0> = [Float,33,53,58]; @symbol_return<0> = [Dictionary,33,63,73]; ]
+    function step(ts as Number, sog as Float, cog as Float) as Dictionary {
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_33_74_104_4_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 34 8 ]
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_34_8_38_8_if_stmt:
+        symbol [ lastTs %tmp.2 34 12 18 ];
+        %tmp.2 = getv ? :lastTs;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_34_8_38_8_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_34_8_38_8_if_true:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_34_28_38_8_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 35 12 ]
+        %tmp.5 = lgetv %ts;
+        symbol [ ts %tmp.5 35 21 23 ];
+        symbol [ lastTs ? 35 12 18 ];
+        putv self :lastTs %tmp.5;
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 36 12 ]
+        %tmp.6 = lgetv %cog;
+        symbol [ cog %tmp.6 36 22 25 ];
+        symbol [ lastCog ? 36 12 19 ];
+        putv self :lastCog %tmp.6;
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 37 12 ]
+        %tmp.7 = newd 1;
+        %tmp.9 = const :state;
+        symbol [ state %tmp.9 37 22 27 const ];
+        %tmp.10 = "idle";
+        %tmp.11 = dup %tmp.7;
+        %tmp.12 = aputv %tmp.11 %tmp.9 %tmp.10;
+        ret %tmp.12;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_34_28_38_8_stop:
+        goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_34_8_38_8_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_34_8_38_8_if_end:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 40 8 ]
+        [ "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_33_74_104_4_start" "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_33_74_104_4_stop" ]
+        %dt.1 = local;
+        symbol [ dt %dt.1 40 12 14 ];
+        %tmp.13 = lgetv %ts;
+        symbol [ ts %tmp.13 40 18 20 ];
+        symbol [ lastTs %tmp.15 40 23 29 ];
+        %tmp.15 = getv ? :lastTs;
+        %tmp.16 = sub %tmp.13 %tmp.15;
+        %tmp.17 = 1000.0;
+        %tmp.18 = div %tmp.16 %tmp.17;
+        lputv %dt.1 %tmp.18;
+        symbol [ dt %dt.1 40 12 14 ];
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 41 8 ]
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_41_8_41_33_if_stmt:
+        %tmp.19 = lgetv %dt.1;
+        symbol [ dt %tmp.19 41 12 14 ];
+        %tmp.20 = 0;
+        %tmp.21 = lte %tmp.19 %tmp.20;
+        bf %tmp.21 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_41_8_41_33_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_41_8_41_33_if_true:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_41_21_41_33_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 41 23 ]
+        %tmp.22 = 1.0;
+        lputv %dt.1 %tmp.22;
+        symbol [ dt %dt.1 41 23 25 ];
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_41_21_41_33_stop:
+        goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_41_8_41_33_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_41_8_41_33_if_end:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 44 8 ]
+        [ "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_33_74_104_4_start" "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_33_74_104_4_stop" ]
+        %d.2 = local;
+        symbol [ d %d.2 44 12 13 ];
+        %tmp.23 = self;
+        symbol [ wrap %tmp.24 44 16 20 ];
+        %tmp.24 = getv function %tmp.23 :wrap;
+        %tmp.25 = lgetv %cog;
+        symbol [ cog %tmp.25 44 21 24 ];
+        symbol [ lastCog %tmp.27 44 27 34 ];
+        %tmp.27 = getv ? :lastCog;
+        %tmp.28 = sub %tmp.25 %tmp.27;
+        %tmp.29 = invoke %tmp.23 %tmp.24(%tmp.28);
+        lputv %d.2 %tmp.29;
+        symbol [ d %d.2 44 12 13 ];
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 45 8 ]
+        [ "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_33_74_104_4_start" "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_33_74_104_4_stop" ]
+        %turn.3 = local;
+        symbol [ turn %turn.3 45 12 16 ];
+        %tmp.30 = lgetv %d.2;
+        symbol [ d %tmp.30 45 19 20 ];
+        %tmp.31 = lgetv %dt.1;
+        symbol [ dt %tmp.31 45 23 25 ];
+        %tmp.32 = div %tmp.30 %tmp.31;
+        lputv %turn.3 %tmp.32;
+        symbol [ turn %turn.3 45 12 16 ];
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 48 8 ]
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_48_8_65_8_if_stmt:
+        %tmp.33 = lgetv %sog;
+        symbol [ sog %tmp.33 48 12 15 ];
+        symbol [ VMIN %tmp.35 48 19 23 ];
+        %tmp.35 = getv ? :VMIN;
+        %tmp.36 = gte %tmp.33 %tmp.35;
+        bf %tmp.36 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_48_8_65_8_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_48_8_65_8_if_true:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_48_25_65_8_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 49 12 ]
+        [ "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_48_25_65_8_start" "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_48_25_65_8_stop" ]
+        %thetaGuess.4 = local;
+        symbol [ thetaGuess %thetaGuess.4 49 16 26 ];
+        %tmp.37 = lgetv %cog;
+        symbol [ cog %tmp.37 49 29 32 ];
+        lputv %thetaGuess.4 %tmp.37;
+        symbol [ thetaGuess %thetaGuess.4 49 16 26 ];
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 50 12 ]
+        [ "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_48_25_65_8_start" "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_48_25_65_8_stop" ]
+        %side.5 = local;
+        symbol [ side %side.5 50 16 20 ];
+        %tmp.38 = self;
+        symbol [ sideOf %tmp.39 50 23 29 ];
+        %tmp.39 = getv function %tmp.38 :sideOf;
+        %tmp.40 = lgetv %thetaGuess.4;
+        symbol [ thetaGuess %tmp.40 50 30 40 ];
+        symbol [ twd %tmp.42 50 42 45 ];
+        %tmp.42 = getv ? :twd;
+        %tmp.43 = invoke %tmp.38 %tmp.39(%tmp.40, %tmp.42);
+        lputv %side.5 %tmp.43;
+        symbol [ side %side.5 50 16 20 ];
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 52 12 ]
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_52_12_56_12_if_stmt:
+        %tmp.44 = lgetv %side.5;
+        symbol [ side %tmp.44 52 16 20 ];
+        %tmp.45 = 0;
+        %tmp.46 = lt %tmp.44 %tmp.45;
+        bf %tmp.46 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_52_12_56_12_if_else_false;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_52_12_56_12_if_true:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_52_26_54_12_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 53 16 ]
+        symbol [ rollPort %tmp.48 53 16 24 ];
+        %tmp.48 = getv ? :rollPort;
+        symbol [ add %tmp.49 53 25 28 ];
+        %tmp.49 = getv function %tmp.48 :add;
+        %tmp.50 = lgetv %cog;
+        symbol [ cog %tmp.50 53 29 32 ];
+        invoke %tmp.48 %tmp.49(%tmp.50);
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_52_26_54_12_stop:
+        goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_52_12_56_12_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_52_12_56_12_if_else_false:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_54_19_56_12_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 55 16 ]
+        symbol [ rollStar %tmp.52 55 16 24 ];
+        %tmp.52 = getv ? :rollStar;
+        symbol [ add %tmp.53 55 25 28 ];
+        %tmp.53 = getv function %tmp.52 :add;
+        %tmp.54 = lgetv %cog;
+        symbol [ cog %tmp.54 55 29 32 ];
+        invoke %tmp.52 %tmp.53(%tmp.54);
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_54_19_56_12_stop:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_52_12_56_12_if_end:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 58 12 ]
+        [ "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_48_25_65_8_start" "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_48_25_65_8_stop" ]
+        %mp.6 = local;
+        symbol [ mp %mp.6 58 16 18 ];
+        symbol [ rollPort %tmp.56 58 21 29 ];
+        %tmp.56 = getv ? :rollPort;
+        symbol [ mean %tmp.57 58 30 34 ];
+        %tmp.57 = getv function %tmp.56 :mean;
+        %tmp.58 = invoke %tmp.56 %tmp.57();
+        lputv %mp.6 %tmp.58;
+        symbol [ mp %mp.6 58 16 18 ];
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 59 12 ]
+        [ "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_48_25_65_8_start" "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_48_25_65_8_stop" ]
+        %ms.7 = local;
+        symbol [ ms %ms.7 59 16 18 ];
+        symbol [ rollStar %tmp.60 59 21 29 ];
+        %tmp.60 = getv ? :rollStar;
+        symbol [ mean %tmp.61 59 30 34 ];
+        %tmp.61 = getv function %tmp.60 :mean;
+        %tmp.62 = invoke %tmp.60 %tmp.61();
+        lputv %ms.7 %tmp.62;
+        symbol [ ms %ms.7 59 16 18 ];
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 60 12 ]
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_60_12_64_12_if_stmt:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_60_16_60_48_begin:
+        symbol [ rollPort %tmp.64 60 16 24 ];
+        %tmp.64 = getv ? :rollPort;
+        symbol [ n %tmp.65 60 25 26 ];
+        %tmp.65 = getv %tmp.64 :n;
+        %tmp.66 = 10;
+        %tmp.67 = gt %tmp.65 %tmp.66;
+        bf %tmp.67 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_60_12_64_12_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_60_35_60_48_true:
+        symbol [ rollStar %tmp.69 60 35 43 ];
+        %tmp.69 = getv ? :rollStar;
+        symbol [ n %tmp.70 60 44 45 ];
+        %tmp.70 = getv %tmp.69 :n;
+        %tmp.71 = 10;
+        %tmp.72 = gt %tmp.70 %tmp.71;
+        push %tmp.72;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_60_35_60_48_end:
+        %tmp.73 = phi [%tmp.67 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_60_16_60_48_begin] [%tmp.72 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_60_35_60_48_true] [%tmp.73 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_60_35_60_48_end];
+        bf %tmp.73 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_60_12_64_12_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_60_12_64_12_if_true:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_60_52_64_12_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 62 16 ]
+        [ "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_60_52_64_12_start" "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_60_52_64_12_stop" ]
+        %bis.8 = local;
+        symbol [ bis %bis.8 62 20 23 ];
+        %tmp.74 = self;
+        symbol [ wrap %tmp.75 62 26 30 ];
+        %tmp.75 = getv function %tmp.74 :wrap;
+        %tmp.76 = lgetv %mp.6;
+        symbol [ mp %tmp.76 62 32 34 ];
+        %tmp.77 = lgetv %ms.7;
+        symbol [ ms %tmp.77 62 37 39 ];
+        %tmp.78 = add %tmp.76 %tmp.77;
+        %tmp.79 = 0.5;
+        %tmp.80 = mul %tmp.78 %tmp.79;
+        %tmp.81 = invoke %tmp.74 %tmp.75(%tmp.80);
+        lputv %bis.8 %tmp.81;
+        symbol [ bis %bis.8 62 20 23 ];
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 63 16 ]
+        %tmp.82 = lgetv %bis.8;
+        symbol [ bis %tmp.82 63 22 25 ];
+        symbol [ twd ? 63 16 19 ];
+        putv self :twd %tmp.82;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_60_52_64_12_stop:
+        goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_60_12_64_12_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_60_12_64_12_if_end:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_48_25_65_8_stop:
+        goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_48_8_65_8_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_48_8_65_8_if_end:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 68 8 ]
+        [ "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_33_74_104_4_start" "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_33_74_104_4_stop" ]
+        %state.9 = local;
+        symbol [ state %state.9 68 12 17 ];
+        %tmp.83 = "unknown";
+        lputv %state.9 %tmp.83;
+        symbol [ state %state.9 68 12 17 ];
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 69 8 ]
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_69_8_86_8_if_stmt:
+        symbol [ twd %tmp.85 69 12 15 ];
+        %tmp.85 = getv ? :twd;
+        %tmp.86 = null;
+        %tmp.87 = ne %tmp.85 %tmp.86;
+        bf %tmp.87 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_69_8_86_8_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_69_8_86_8_if_true:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_69_25_86_8_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 70 12 ]
+        [ "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_69_25_86_8_start" "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_69_25_86_8_stop" ]
+        %awa.10 = local;
+        symbol [ awa %awa.10 70 16 19 ];
+        %tmp.88 = self;
+        symbol [ absDeg %tmp.89 70 22 28 ];
+        %tmp.89 = getv function %tmp.88 :absDeg;
+        %tmp.90 = self;
+        symbol [ radToDeg %tmp.91 70 29 37 ];
+        %tmp.91 = getv function %tmp.90 :radToDeg;
+        %tmp.92 = self;
+        symbol [ angdiff %tmp.93 70 38 45 ];
+        %tmp.93 = getv function %tmp.92 :angdiff;
+        %tmp.94 = lgetv %cog;
+        symbol [ cog %tmp.94 70 46 49 ];
+        symbol [ twd %tmp.96 70 51 54 ];
+        %tmp.96 = getv ? :twd;
+        %tmp.97 = as %tmp.96 { (!Null) };
+        %tmp.98 = invoke %tmp.92 %tmp.93(%tmp.94, %tmp.97);
+        %tmp.99 = invoke %tmp.90 %tmp.91(%tmp.98);
+        %tmp.100 = invoke %tmp.88 %tmp.89(%tmp.99);
+        lputv %awa.10 %tmp.100;
+        symbol [ awa %awa.10 70 16 19 ];
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 71 12 ]
+        [ "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_69_25_86_8_start" "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_69_25_86_8_stop" ]
+        %up.11 = local;
+        symbol [ up %up.11 71 16 18 ];
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_71_23_71_48_begin:
+        %tmp.101 = lgetv %awa.10;
+        symbol [ awa %tmp.101 71 24 27 ];
+        %tmp.102 = 25;
+        %tmp.103 = gte %tmp.101 %tmp.102;
+        %tmp.104 = dup %tmp.103;
+        bf %tmp.104 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_71_38_71_48_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_71_38_71_48_true:
+        %tmp.105 = lgetv %awa.10;
+        symbol [ awa %tmp.105 71 39 42 ];
+        %tmp.106 = 55;
+        %tmp.107 = lte %tmp.105 %tmp.106;
+        %tmp.108 = and %tmp.103 %tmp.107;
+        push %tmp.108;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_71_38_71_48_end:
+        %tmp.109 = phi [%tmp.104 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_71_23_71_48_begin] [%tmp.108 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_71_38_71_48_true] [%tmp.109 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_71_38_71_48_end];
+        lputv %up.11 %tmp.109;
+        symbol [ up %up.11 71 16 18 ];
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 72 12 ]
+        [ "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_69_25_86_8_start" "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_69_25_86_8_stop" ]
+        %down.12 = local;
+        symbol [ down %down.12 72 16 20 ];
+        %tmp.110 = self;
+        symbol [ absDeg %tmp.111 72 23 29 ];
+        %tmp.111 = getv function %tmp.110 :absDeg;
+        %tmp.112 = self;
+        symbol [ radToDeg %tmp.113 72 30 38 ];
+        %tmp.113 = getv function %tmp.112 :radToDeg;
+        %tmp.114 = self;
+        symbol [ angdiff %tmp.115 72 39 46 ];
+        %tmp.115 = getv function %tmp.114 :angdiff;
+        %tmp.116 = lgetv %cog;
+        symbol [ cog %tmp.116 72 47 50 ];
+        symbol [ twd %tmp.118 72 52 55 ];
+        %tmp.118 = getv ? :twd;
+        symbol [ M %tmp.119 72 58 59 ];
+        %tmp.119 = getm $.Toybox.Math;
+        symbol [ PI %tmp.120 72 60 62 ];
+        %tmp.120 = getv %tmp.119 :PI;
+        %tmp.121 = add %tmp.118 %tmp.120;
+        %tmp.122 = invoke %tmp.114 %tmp.115(%tmp.116, %tmp.121);
+        %tmp.123 = invoke %tmp.112 %tmp.113(%tmp.122);
+        %tmp.124 = invoke %tmp.110 %tmp.111(%tmp.123);
+        %tmp.125 = 45;
+        %tmp.126 = lte %tmp.124 %tmp.125;
+        lputv %down.12 %tmp.126;
+        symbol [ down %down.12 72 16 20 ];
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 74 12 ]
+        [ "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_69_25_86_8_start" "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_69_25_86_8_stop" ]
+        %newsign.13 = local;
+        symbol [ newsign %newsign.13 74 16 23 ];
+        %tmp.127 = self;
+        symbol [ sideOf %tmp.128 74 26 32 ];
+        %tmp.128 = getv function %tmp.127 :sideOf;
+        %tmp.129 = lgetv %cog;
+        symbol [ cog %tmp.129 74 33 36 ];
+        symbol [ twd %tmp.131 74 38 41 ];
+        %tmp.131 = getv ? :twd;
+        %tmp.132 = invoke %tmp.127 %tmp.128(%tmp.129, %tmp.131);
+        lputv %newsign.13 %tmp.132;
+        symbol [ newsign %newsign.13 74 16 23 ];
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 75 12 ]
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_12_83_12_if_stmt:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_16_75_82_begin:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_16_75_58_begin:
+        symbol [ M %tmp.133 75 16 17 ];
+        %tmp.133 = getm $.Toybox.Math;
+        symbol [ abs %tmp.134 75 18 21 ];
+        %tmp.134 = getv function %tmp.133 :abs;
+        %tmp.135 = lgetv %turn.3;
+        symbol [ turn %tmp.135 75 22 26 ];
+        %tmp.136 = invoke %tmp.133 %tmp.134(%tmp.135);
+        symbol [ TURN_RATE_MIN %tmp.138 75 30 43 ];
+        %tmp.138 = getv ? :TURN_RATE_MIN;
+        %tmp.139 = gt %tmp.136 %tmp.138;
+        bf %tmp.139 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_12_83_12_if_false;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_47_75_58_true:
+        %tmp.140 = lgetv %newsign.13;
+        symbol [ newsign %tmp.140 75 47 54 ];
+        symbol [ tackSign %tmp.142 75 58 66 ];
+        %tmp.142 = getv ? :tackSign;
+        %tmp.143 = ne %tmp.140 %tmp.142;
+        push %tmp.143;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_47_75_58_end:
+        %tmp.144 = phi [%tmp.139 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_16_75_58_begin] [%tmp.143 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_47_75_58_true] [%tmp.144 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_47_75_58_end];
+        bf %tmp.144 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_12_83_12_if_false;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_70_75_82_true:
+        symbol [ tackSign %tmp.146 75 70 78 ];
+        %tmp.146 = getv ? :tackSign;
+        %tmp.147 = 0;
+        %tmp.148 = ne %tmp.146 %tmp.147;
+        push %tmp.148;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_70_75_82_end:
+        %tmp.149 = phi [%tmp.144 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_16_75_82_begin] [%tmp.148 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_70_75_82_true] [%tmp.149 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_70_75_82_end];
+        bf %tmp.149 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_12_83_12_if_false;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_12_83_12_if_true:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_85_77_12_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 76 16 ]
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_76_24_76_38_begin:
+        %tmp.150 = lgetv %up.11;
+        symbol [ up %tmp.150 76 24 26 ];
+        bf %tmp.150 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_76_24_76_38_false;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_76_24_76_38_true:
+        %tmp.151 = "tack";
+        push %tmp.151;
+        goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_76_24_76_38_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_76_24_76_38_false:
+        %tmp.152 = "gybe";
+        push %tmp.152;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_76_24_76_38_end:
+        %tmp.153 = phi [%tmp.150 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_76_24_76_38_begin] [%tmp.151 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_76_24_76_38_true] [%tmp.152 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_76_24_76_38_false] [%tmp.153 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_76_24_76_38_end];
+        lputv %state.9 %tmp.153;
+        symbol [ state %state.9 76 16 21 ];
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_85_77_12_stop:
+        goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_12_83_12_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_12_83_12_if_false:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 77 19 ]
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_77_19_83_12_if_stmt:
+        %tmp.154 = lgetv %up.11;
+        symbol [ up %tmp.154 77 23 25 ];
+        bf %tmp.154 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_77_19_83_12_if_false;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_77_19_83_12_if_true:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_77_27_79_12_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 78 16 ]
+        %tmp.155 = "upwind";
+        lputv %state.9 %tmp.155;
+        symbol [ state %state.9 78 16 21 ];
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_77_27_79_12_stop:
+        goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_77_19_83_12_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_77_19_83_12_if_false:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 79 19 ]
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_79_19_83_12_if_stmt:
+        %tmp.156 = lgetv %down.12;
+        symbol [ down %tmp.156 79 23 27 ];
+        bf %tmp.156 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_79_19_83_12_if_else_false;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_79_19_83_12_if_true:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_79_29_81_12_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 80 16 ]
+        %tmp.157 = "downwind";
+        lputv %state.9 %tmp.157;
+        symbol [ state %state.9 80 16 21 ];
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_79_29_81_12_stop:
+        goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_79_19_83_12_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_79_19_83_12_if_else_false:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_81_19_83_12_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 82 16 ]
+        %tmp.158 = "reach";
+        lputv %state.9 %tmp.158;
+        symbol [ state %state.9 82 16 21 ];
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_81_19_83_12_stop:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_79_19_83_12_if_end:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_77_19_83_12_if_end:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_75_12_83_12_if_end:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 85 12 ]
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_85_23_85_51_begin:
+        %tmp.159 = lgetv %newsign.13;
+        symbol [ newsign %tmp.159 85 24 31 ];
+        %tmp.160 = 0;
+        %tmp.161 = eq %tmp.159 %tmp.160;
+        bf %tmp.161 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_85_23_85_51_false;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_85_23_85_51_true:
+        symbol [ tackSign %tmp.163 85 40 48 ];
+        %tmp.163 = getv ? :tackSign;
+        push %tmp.163;
+        goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_85_23_85_51_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_85_23_85_51_false:
+        %tmp.164 = lgetv %newsign.13;
+        symbol [ newsign %tmp.164 85 51 58 ];
+        push %tmp.164;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_85_23_85_51_end:
+        %tmp.165 = phi [%tmp.161 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_85_23_85_51_begin] [%tmp.163 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_85_23_85_51_true] [%tmp.164 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_85_23_85_51_false] [%tmp.165 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_85_23_85_51_end];
+        symbol [ tackSign ? 85 12 20 ];
+        putv self :tackSign %tmp.165;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_69_25_86_8_stop:
+        goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_69_8_86_8_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_69_8_86_8_if_end:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 88 8 ]
+        %tmp.166 = lgetv %ts;
+        symbol [ ts %tmp.166 88 17 19 ];
+        symbol [ lastTs ? 88 8 14 ];
+        putv self :lastTs %tmp.166;
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 89 8 ]
+        %tmp.167 = lgetv %cog;
+        symbol [ cog %tmp.167 89 18 21 ];
+        symbol [ lastCog ? 89 8 15 ];
+        putv self :lastCog %tmp.167;
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 91 8 ]
+        [ "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_33_74_104_4_start" "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_33_74_104_4_stop" ]
+        %lift.14 = local;
+        symbol [ lift %lift.14 91 12 16 ];
+        %tmp.168 = 0.0;
+        lputv %lift.14 %tmp.168;
+        symbol [ lift %lift.14 91 12 16 ];
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 92 8 ]
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_92_8_96_8_if_stmt:
+        symbol [ twd %tmp.170 92 12 15 ];
+        %tmp.170 = getv ? :twd;
+        %tmp.171 = null;
+        %tmp.172 = ne %tmp.170 %tmp.171;
+        bf %tmp.172 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_92_8_96_8_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_92_8_96_8_if_true:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_92_25_96_8_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 93 12 ]
+        [ "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_92_25_96_8_start" "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_92_25_96_8_stop" ]
+        %awaNow.15 = local;
+        symbol [ awaNow %awaNow.15 93 16 22 ];
+        %tmp.173 = self;
+        symbol [ radToDeg %tmp.174 93 25 33 ];
+        %tmp.174 = getv function %tmp.173 :radToDeg;
+        %tmp.175 = self;
+        symbol [ angdiff %tmp.176 93 34 41 ];
+        %tmp.176 = getv function %tmp.175 :angdiff;
+        %tmp.177 = lgetv %cog;
+        symbol [ cog %tmp.177 93 42 45 ];
+        symbol [ twd %tmp.179 93 47 50 ];
+        %tmp.179 = getv ? :twd;
+        %tmp.180 = as %tmp.179 { (!Null) };
+        %tmp.181 = invoke %tmp.175 %tmp.176(%tmp.177, %tmp.180);
+        %tmp.182 = invoke %tmp.173 %tmp.174(%tmp.181);
+        lputv %awaNow.15 %tmp.182;
+        symbol [ awaNow %awaNow.15 93 16 22 ];
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 95 12 ]
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_95_19_95_60_begin:
+        symbol [ tackSign %tmp.184 95 20 28 ];
+        %tmp.184 = getv ? :tackSign;
+        %tmp.185 = 0;
+        %tmp.186 = lt %tmp.184 %tmp.185;
+        bf %tmp.186 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_95_19_95_60_false;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_95_19_95_60_true:
+        %tmp.187 = lgetv %awaNow.15;
+        symbol [ awaNow %tmp.187 95 38 44 ];
+        %tmp.188 = sub 0 %tmp.187;
+        push %tmp.188;
+        goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_95_19_95_60_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_95_19_95_60_false:
+        %tmp.189 = -1;
+        %tmp.190 = lgetv %awaNow.15;
+        symbol [ awaNow %tmp.190 95 54 60 ];
+        %tmp.191 = mul %tmp.189 %tmp.190;
+        push %tmp.191;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_95_19_95_60_end:
+        %tmp.192 = phi [%tmp.186 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_95_19_95_60_begin] [%tmp.188 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_95_19_95_60_true] [%tmp.191 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_95_19_95_60_false] [%tmp.192 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_95_19_95_60_end];
+        lputv %lift.14 %tmp.192;
+        symbol [ lift %lift.14 95 12 16 ];
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_92_25_96_8_stop:
+        goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_92_8_96_8_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_92_8_96_8_if_end:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 98 8 ]
+        %tmp.193 = newd 4;
+        %tmp.195 = const :state;
+        symbol [ state %tmp.195 99 13 18 const ];
+        %tmp.196 = lgetv %state.9;
+        symbol [ state %tmp.196 99 25 30 ];
+        %tmp.197 = dup %tmp.193;
+        %tmp.198 = aputv %tmp.197 %tmp.195 %tmp.196;
+        %tmp.200 = const :twd;
+        symbol [ twd %tmp.200 100 13 16 const ];
+        symbol [ twd %tmp.202 100 25 28 ];
+        %tmp.202 = getv ? :twd;
+        %tmp.203 = dup %tmp.198;
+        %tmp.204 = aputv %tmp.203 %tmp.200 %tmp.202;
+        %tmp.206 = const :cog;
+        symbol [ cog %tmp.206 101 13 16 const ];
+        %tmp.207 = lgetv %cog;
+        symbol [ cog %tmp.207 101 25 28 ];
+        %tmp.208 = dup %tmp.204;
+        %tmp.209 = aputv %tmp.208 %tmp.206 %tmp.207;
+        %tmp.211 = const :lift_deg;
+        symbol [ lift_deg %tmp.211 102 13 21 const ];
+        %tmp.212 = lgetv %lift.14;
+        symbol [ lift %tmp.212 102 25 29 ];
+        %tmp.213 = dup %tmp.209;
+        %tmp.214 = aputv %tmp.213 %tmp.211 %tmp.212;
+        ret %tmp.214;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_33_74_104_4_stop:
+    }
+}
+[ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 108; @symbol_functiondef = [angdiff,108,9,16]; @symbol_param<0> = [a,108,17,18]; @symbol_param<0>_type<0> = [Float,108,22,27]; @symbol_param<1> = [b,108,29,30]; @symbol_param<1>_type<0> = [Float,108,34,39]; @symbol_return<0> = [Float,108,44,49]; ]
+function angdiff(a as Float, b as Float) as Float {
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_108_50_110_0_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 109 4 ]
+    %tmp.1 = self;
+    symbol [ wrap %tmp.2 109 11 15 ];
+    %tmp.2 = getv function %tmp.1 :wrap;
+    %tmp.3 = lgetv %a;
+    symbol [ a %tmp.3 109 16 17 ];
+    %tmp.4 = lgetv %b;
+    symbol [ b %tmp.4 109 20 21 ];
+    %tmp.5 = sub %tmp.3 %tmp.4;
+    %tmp.6 = invoke %tmp.1 %tmp.2(%tmp.5);
+    ret %tmp.6;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_108_50_110_0_stop:
+}
+[ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 112; @symbol_functiondef = [wrap,112,9,13]; @symbol_param<0> = [x,112,14,15]; @symbol_param<0>_type<0> = [Float,112,19,24]; @symbol_return<0> = [Float,112,29,34]; ]
+function wrap(x as Float) as Float {
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_112_35_116_0_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 113 4 ]
+    while @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_113_4_113_40_while_test @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_113_4_113_40_while_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_113_4_113_40_while_test:
+    %tmp.1 = lgetv %x;
+    symbol [ x %tmp.1 113 11 12 ];
+    symbol [ M %tmp.2 113 17 18 ];
+    %tmp.2 = getm $.Toybox.Math;
+    symbol [ PI %tmp.3 113 19 21 ];
+    %tmp.3 = getv %tmp.2 :PI;
+    %tmp.4 = sub 0 %tmp.3;
+    %tmp.5 = lte %tmp.1 %tmp.4;
+    bf %tmp.5 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_113_4_113_40_while_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_113_4_113_40_while_begin:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_113_23_113_40_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 113 25 ]
+    %tmp.6 = lgetv %x;
+    symbol [ x %tmp.6 113 25 26 ];
+    %tmp.7 = 2;
+    symbol [ M %tmp.8 113 34 35 ];
+    %tmp.8 = getm $.Toybox.Math;
+    symbol [ PI %tmp.9 113 36 38 ];
+    %tmp.9 = getv %tmp.8 :PI;
+    %tmp.10 = mul %tmp.7 %tmp.9;
+    %tmp.11 = add %tmp.6 %tmp.10;
+    lputv %x %tmp.11;
+    symbol [ x %x 113 25 26 ];
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_113_23_113_40_stop:
+    goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_113_4_113_40_while_test;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_113_4_113_40_while_end:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 114 4 ]
+    while @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_114_4_114_40_while_test @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_114_4_114_40_while_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_114_4_114_40_while_test:
+    %tmp.12 = lgetv %x;
+    symbol [ x %tmp.12 114 11 12 ];
+    symbol [ M %tmp.13 114 17 18 ];
+    %tmp.13 = getm $.Toybox.Math;
+    symbol [ PI %tmp.14 114 19 21 ];
+    %tmp.14 = getv %tmp.13 :PI;
+    %tmp.15 = gt %tmp.12 %tmp.14;
+    bf %tmp.15 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_114_4_114_40_while_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_114_4_114_40_while_begin:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_114_23_114_40_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 114 25 ]
+    %tmp.16 = lgetv %x;
+    symbol [ x %tmp.16 114 25 26 ];
+    %tmp.17 = 2;
+    symbol [ M %tmp.18 114 34 35 ];
+    %tmp.18 = getm $.Toybox.Math;
+    symbol [ PI %tmp.19 114 36 38 ];
+    %tmp.19 = getv %tmp.18 :PI;
+    %tmp.20 = mul %tmp.17 %tmp.19;
+    %tmp.21 = sub %tmp.16 %tmp.20;
+    lputv %x %tmp.21;
+    symbol [ x %x 114 25 26 ];
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_114_23_114_40_stop:
+    goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_114_4_114_40_while_test;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_114_4_114_40_while_end:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 115 4 ]
+    %tmp.22 = lgetv %x;
+    symbol [ x %tmp.22 115 11 12 ];
+    ret %tmp.22;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_112_35_116_0_stop:
+}
+[ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 118; @symbol_functiondef = [radToDeg,118,9,17]; @symbol_param<0> = [r,118,18,19]; @symbol_param<0>_type<0> = [Float,118,23,28]; @symbol_return<0> = [Float,118,33,38]; ]
+function radToDeg(r as Float) as Float {
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_118_39_120_0_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 119 4 ]
+    %tmp.1 = lgetv %r;
+    symbol [ r %tmp.1 119 11 12 ];
+    %tmp.2 = 180.0;
+    %tmp.3 = mul %tmp.1 %tmp.2;
+    symbol [ M %tmp.4 119 23 24 ];
+    %tmp.4 = getm $.Toybox.Math;
+    symbol [ PI %tmp.5 119 25 27 ];
+    %tmp.5 = getv %tmp.4 :PI;
+    %tmp.6 = div %tmp.3 %tmp.5;
+    ret %tmp.6;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_118_39_120_0_stop:
+}
+[ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 123; @symbol_functiondef = [sideOf,123,9,15]; @symbol_param<0> = [cog,123,16,19]; @symbol_param<0>_type<0> = [Float,123,23,28]; @symbol_param<1> = [twd,123,30,33]; @symbol_param<1>_type<0> = [Float,123,37,42]; @symbol_return<0> = [Number,123,47,53]; ]
+function sideOf(cog as Float, twd as Float) as Number {
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_123_54_126_0_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 124 4 ]
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_124_4_124_33_if_stmt:
+    %tmp.1 = lgetv %twd;
+    symbol [ twd %tmp.1 124 8 11 ];
+    %tmp.2 = null;
+    %tmp.3 = eq %tmp.1 %tmp.2;
+    bf %tmp.3 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_124_4_124_33_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_124_4_124_33_if_true:
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_124_21_124_33_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 124 23 ]
+    %tmp.4 = 0;
+    ret %tmp.4;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_124_21_124_33_stop:
+    goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_124_4_124_33_if_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_124_4_124_33_if_end:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 125 4 ]
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_125_11_125_42_begin:
+    %tmp.5 = self;
+    symbol [ angdiff %tmp.6 125 12 19 ];
+    %tmp.6 = getv function %tmp.5 :angdiff;
+    %tmp.7 = lgetv %cog;
+    symbol [ cog %tmp.7 125 20 23 ];
+    %tmp.8 = lgetv %twd;
+    symbol [ twd %tmp.8 125 25 28 ];
+    %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.7, %tmp.8);
+    %tmp.10 = 0;
+    %tmp.11 = lt %tmp.9 %tmp.10;
+    bf %tmp.11 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_125_11_125_42_false;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_125_11_125_42_true:
+    %tmp.12 = -1;
+    push %tmp.12;
+    goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_125_11_125_42_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_125_11_125_42_false:
+    %tmp.13 = 1;
+    push %tmp.13;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_125_11_125_42_end:
+    %tmp.14 = phi [%tmp.11 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_125_11_125_42_begin] [%tmp.12 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_125_11_125_42_true] [%tmp.13 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_125_11_125_42_false] [%tmp.14 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_125_11_125_42_end];
+    ret %tmp.14;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_123_54_126_0_stop:
+}
+[ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 128; @symbol_functiondef = [absDeg,128,9,15]; @symbol_param<0> = [d,128,16,17]; @symbol_param<0>_type<0> = [Float,128,21,26]; @symbol_return<0> = [Float,128,31,36]; ]
+function absDeg(d as Float) as Float {
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_128_37_130_0_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc" 129 4 ]
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_129_11_129_26_begin:
+    %tmp.1 = lgetv %d;
+    symbol [ d %tmp.1 129 12 13 ];
+    %tmp.2 = 0;
+    %tmp.3 = lt %tmp.1 %tmp.2;
+    bf %tmp.3 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_129_11_129_26_false;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_129_11_129_26_true:
+    %tmp.4 = lgetv %d;
+    symbol [ d %tmp.4 129 22 23 ];
+    %tmp.5 = sub 0 %tmp.4;
+    push %tmp.5;
+    goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_129_11_129_26_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_129_11_129_26_false:
+    %tmp.6 = lgetv %d;
+    symbol [ d %tmp.6 129 26 27 ];
+    push %tmp.6;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_129_11_129_26_end:
+    %tmp.7 = phi [%tmp.3 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_129_11_129_26_begin] [%tmp.5 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_129_11_129_26_true] [%tmp.6 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_129_11_129_26_false] [%tmp.7 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_129_11_129_26_end];
+    ret %tmp.7;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_algo_tactical_mc_128_37_130_0_stop:
+}
+[ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\algo\tactical.mc"; @line = 1; ]
+<init> {
+}

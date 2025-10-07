@@ -1,0 +1,158 @@
+[ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; @symbol_usingAlias = [Ui,1,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; @symbol_usingAlias = [Gfx,2,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Activity,3,13,21]; @symbol_usingAlias = [Act,3,25,28]; ]
+using Toybox.Activity as :Act;
+[ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [System,4,13,19]; @symbol_usingAlias = [Sys,4,25,28]; ]
+using Toybox.System as :Sys;
+[ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc"; @line = 7; @symbol_classdef = [MyField,7,6,13]; @symbol_extends<0> = [Ui,7,22,24]; @symbol_extends<1> = [DataField,7,25,34]; ]
+class MyField extends Ui.DataField {
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc"; @line = 8; @position = 8; @symbol_vardef = [_layout,8,8,15]; @symbol_type<0> = [Ui,8,19,21]; @symbol_type<1> = [View,8,22,26]; ]
+    var _layout as Ui.View;
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc"; @line = 9; @position = 8; @symbol_vardef = [_big,9,8,12]; @symbol_type<0> = [Ui,9,19,21]; @symbol_type<1> = [Label,9,22,27]; ]
+    var _big as Ui.Label;
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc"; @line = 10; @position = 8; @symbol_vardef = [_small,10,8,14]; @symbol_type<0> = [Ui,10,19,21]; @symbol_type<1> = [Label,10,22,27]; ]
+    var _small as Ui.Label;
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc"; @line = 11; @position = 8; @symbol_vardef = [_last,11,8,13]; @symbol_type<0> = [String,11,19,25]; ]
+    var _last as String = "";
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc"; @line = 13; @symbol_functiondef = [initialize,13,13,23]; ]
+    function initialize() as Void {
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_13_26_13_52_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc" 13 28 ]
+        symbol [ DataField %tmp.2 13 28 37 ];
+        %tmp.2 = getv ? :DataField;
+        symbol [ initialize %tmp.3 13 38 48 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_13_26_13_52_stop:
+    }
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc"; @line = 15; @symbol_functiondef = [onLayout,15,13,21]; @symbol_param<0> = [dc,15,22,24]; @symbol_param<0>_type<0> = [Gfx,15,28,31]; @symbol_param<0>_type<1> = [Dc,15,32,34]; ]
+    function onLayout(dc as Gfx.Dc) as Void {
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_15_44_20_4_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc" 16 8 ]
+        symbol [ Rez %tmp.2 16 18 21 ];
+        %tmp.2 = getv ? :Rez;
+        symbol [ Layouts %tmp.3 16 22 29 ];
+        %tmp.3 = getv %tmp.2 :Layouts;
+        symbol [ MainLayout %tmp.4 16 30 40 ];
+        %tmp.4 = getv function %tmp.3 :MainLayout;
+        %tmp.5 = lgetv %dc;
+        symbol [ dc %tmp.5 16 41 43 ];
+        %tmp.6 = invoke %tmp.3 %tmp.4(%tmp.5);
+        symbol [ _layout ? 16 8 15 ];
+        putv self :_layout %tmp.6;
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc" 17 8 ]
+        symbol [ _layout %tmp.8 17 18 25 ];
+        %tmp.8 = getv ? :_layout;
+        symbol [ findById %tmp.9 17 26 34 ];
+        %tmp.9 = getv function %tmp.8 :findById;
+        %tmp.10 = "big";
+        %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
+        %tmp.12 = as %tmp.11 Ui.Label;
+        symbol [ Ui %tmp.12 17 47 49 ];
+        symbol [ Label %tmp.12 17 50 55 ];
+        symbol [ _big ? 17 8 12 ];
+        putv self :_big %tmp.12;
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc" 18 8 ]
+        symbol [ _layout %tmp.14 18 18 25 ];
+        %tmp.14 = getv ? :_layout;
+        symbol [ findById %tmp.15 18 26 34 ];
+        %tmp.15 = getv function %tmp.14 :findById;
+        %tmp.16 = "small";
+        %tmp.17 = invoke %tmp.14 %tmp.15(%tmp.16);
+        %tmp.18 = as %tmp.17 Ui.Label;
+        symbol [ Ui %tmp.18 18 47 49 ];
+        symbol [ Label %tmp.18 18 50 55 ];
+        symbol [ _small ? 18 8 14 ];
+        putv self :_small %tmp.18;
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc" 19 8 ]
+        %tmp.19 = self;
+        symbol [ setLayout %tmp.20 19 8 17 ];
+        %tmp.20 = getv function %tmp.19 :setLayout;
+        symbol [ _layout %tmp.22 19 18 25 ];
+        %tmp.22 = getv ? :_layout;
+        invoke %tmp.19 %tmp.20(%tmp.22);
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_15_44_20_4_stop:
+    }
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc"; @line = 22; @symbol_functiondef = [compute,22,13,20]; @symbol_param<0> = [info,22,21,25]; @symbol_param<0>_type<0> = [Act,22,29,32]; @symbol_param<0>_type<1> = [Info,22,33,37]; ]
+    function compute(info as Act.Info) as Void {
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_22_47_25_4_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc" 23 8 ]
+        [ "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_22_47_25_4_start" "E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_22_47_25_4_stop" ]
+        %spd.1 = local;
+        symbol [ spd %spd.1 23 12 15 ];
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_23_18_23_59_begin:
+        %tmp.1 = lgetv %info;
+        symbol [ info %tmp.1 23 19 23 ];
+        symbol [ currentSpeed %tmp.2 23 24 36 ];
+        %tmp.2 = getv %tmp.1 :currentSpeed;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_23_18_23_59_false;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_23_18_23_59_true:
+        %tmp.5 = 0.0;
+        push %tmp.5;
+        goto @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_23_18_23_59_end;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_23_18_23_59_false:
+        %tmp.6 = lgetv %info;
+        symbol [ info %tmp.6 23 54 58 ];
+        symbol [ currentSpeed %tmp.7 23 59 71 ];
+        %tmp.7 = getv %tmp.6 :currentSpeed;
+        push %tmp.7;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_23_18_23_59_end:
+        %tmp.8 = phi [%tmp.4 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_23_18_23_59_begin] [%tmp.5 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_23_18_23_59_true] [%tmp.7 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_23_18_23_59_false] [%tmp.8 @E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_23_18_23_59_end];
+        lputv %spd.1 %tmp.8;
+        symbol [ spd %spd.1 23 12 15 ];
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc" 24 8 ]
+        %tmp.9 = "SOG ";
+        %tmp.10 = lgetv %spd.1;
+        symbol [ spd %tmp.10 24 25 28 ];
+        symbol [ format %tmp.11 24 29 35 ];
+        %tmp.11 = getv function %tmp.10 :format;
+        %tmp.12 = "%.1f";
+        %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
+        %tmp.14 = add %tmp.9 %tmp.13;
+        %tmp.15 = " m/s";
+        %tmp.16 = add %tmp.14 %tmp.15;
+        symbol [ _last ? 24 8 13 ];
+        putv self :_last %tmp.16;
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_22_47_25_4_stop:
+    }
+    [ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc"; @line = 27; @symbol_functiondef = [onUpdate,27,13,21]; @symbol_param<0> = [dc,27,22,24]; @symbol_param<0>_type<0> = [Gfx,27,28,31]; @symbol_param<0>_type<1> = [Dc,27,32,34]; ]
+    function onUpdate(dc as Gfx.Dc) as Void {
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_27_44_31_4_start:
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc" 28 8 ]
+        symbol [ _big %tmp.2 28 8 12 ];
+        %tmp.2 = getv ? :_big;
+        symbol [ setText %tmp.3 28 13 20 ];
+        %tmp.3 = getv function %tmp.2 :setText;
+        %tmp.4 = "Tactical HUD";
+        invoke %tmp.2 %tmp.3(%tmp.4);
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc" 29 8 ]
+        symbol [ _small %tmp.6 29 8 14 ];
+        %tmp.6 = getv ? :_small;
+        symbol [ setText %tmp.7 29 15 22 ];
+        %tmp.7 = getv function %tmp.6 :setText;
+        symbol [ _last %tmp.9 29 23 28 ];
+        %tmp.9 = getv ? :_last;
+        invoke %tmp.6 %tmp.7(%tmp.9);
+[ "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc" 30 8 ]
+        symbol [ Ui %tmp.10 30 8 10 ];
+        %tmp.10 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.11 30 11 24 ];
+        %tmp.11 = getv function %tmp.10 :requestUpdate;
+        invoke %tmp.10 %tmp.11();
+E__GarminTacticalHUD_StarterProject_TacticalHUD_source_MyField_mc_27_44_31_4_stop:
+    }
+}
+[ @file = "E:\GarminTacticalHUD\StarterProject\TacticalHUD\source\MyField.mc"; @line = 1; ]
+<init> {
+}

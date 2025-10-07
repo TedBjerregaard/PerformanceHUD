@@ -1,0 +1,1662 @@
+[ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 12; @symbol_moduledef = [Strings,12,11,18]; ]
+    module Strings {
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 13; @position = 27; initialized = true; @symbol_vardef = [AppName,13,27,34]; @symbol_type<0> = [ResourceId,13,38,48]; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 16; @symbol_moduledef = [Styles,16,11,17]; ]
+    module Styles {
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 16; ]
+        <init> {
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 17; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,17,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 17; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 18 18 ]
+                symbol [ Graphics %tmp.1 18 34 42 ];
+                %tmp.1 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.2 18 43 62 ];
+                %tmp.2 = getv %tmp.1 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.3 18 63 71 ];
+                %tmp.3 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.4 18 72 92 ];
+                %tmp.4 = getv %tmp.3 :TEXT_JUSTIFY_VCENTER;
+                %tmp.5 = bitor %tmp.2 %tmp.4;
+                putv self :justification %tmp.5;
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 19 18 ]
+                symbol [ Graphics %tmp.6 19 25 33 ];
+                %tmp.6 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.7 19 34 44 ];
+                %tmp.7 = getv %tmp.6 :FONT_SMALL;
+                putv self :font %tmp.7;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 18; @position = 18; @symbol_constdef = [justification,18,18,31]; ]
+            const justification;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 19; @position = 18; @symbol_constdef = [font,19,18,22]; ]
+            const font;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 22; @symbol_moduledef = [system_size__menu_header,22,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 22; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 23; @position = 18; @symbol_constdef = [width,23,18,23]; @symbol_type<0> = [Number,23,27,33]; ]
+            const width as Number = 454;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 24; @position = 18; @symbol_constdef = [height,24,18,24]; @symbol_type<0> = [Number,24,28,34]; ]
+            const height as Number = 172;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 27; @symbol_moduledef = [system_loc__hint_button_left_bottom,27,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 27; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 28; @position = 18; @symbol_constdef = [x,28,18,19]; @symbol_type<0> = [Number,28,23,29]; ]
+            const x as Number = 16;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 29; @position = 18; @symbol_constdef = [y,29,18,19]; @symbol_type<0> = [Number,29,23,29]; ]
+            const y as Number = 284;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 32; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,32,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 32; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 33 18 ]
+                symbol [ Graphics %tmp.8 33 34 42 ];
+                %tmp.8 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.9 33 43 62 ];
+                %tmp.9 = getv %tmp.8 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.10 33 63 71 ];
+                %tmp.10 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.11 33 72 92 ];
+                %tmp.11 = getv %tmp.10 :TEXT_JUSTIFY_VCENTER;
+                %tmp.12 = bitor %tmp.9 %tmp.11;
+                putv self :justification %tmp.12;
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 34 18 ]
+                symbol [ Graphics %tmp.13 34 25 33 ];
+                %tmp.13 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.14 34 34 44 ];
+                %tmp.14 = getv %tmp.13 :FONT_SMALL;
+                putv self :font %tmp.14;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 33; @position = 18; @symbol_constdef = [justification,33,18,31]; ]
+            const justification;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 34; @position = 18; @symbol_constdef = [font,34,18,22]; ]
+            const font;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 37; @symbol_moduledef = [prompt_loc__body_no_title,37,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 37; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 38; @position = 18; @symbol_constdef = [x,38,18,19]; @symbol_type<0> = [Number,38,23,29]; ]
+            const x as Number = 76;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 39; @position = 18; @symbol_constdef = [y,39,18,19]; @symbol_type<0> = [Number,39,23,29]; ]
+            const y as Number = 70;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 42; @symbol_moduledef = [system_icon_dark__about,42,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 42; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 43; @position = 18; @symbol_constdef = [filename,43,18,26]; @symbol_type<0> = [String,43,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__about.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 44; @position = 18; @symbol_constdef = [compress,44,18,26]; @symbol_type<0> = [String,44,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 45; @position = 18; @symbol_constdef = [dithering,45,18,27]; @symbol_type<0> = [String,45,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 46; @position = 18; @symbol_constdef = [automaticPalette,46,18,34]; @symbol_type<0> = [String,46,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 47; @position = 18; @symbol_constdef = [packingFormat,47,18,31]; @symbol_type<0> = [String,47,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 50; @symbol_moduledef = [system_icon_light__question,50,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 50; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 51; @position = 18; @symbol_constdef = [filename,51,18,26]; @symbol_type<0> = [String,51,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__question.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 52; @position = 18; @symbol_constdef = [compress,52,18,26]; @symbol_type<0> = [String,52,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 53; @position = 18; @symbol_constdef = [dithering,53,18,27]; @symbol_type<0> = [String,53,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 54; @position = 18; @symbol_constdef = [automaticPalette,54,18,34]; @symbol_type<0> = [String,54,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 55; @position = 18; @symbol_constdef = [packingFormat,55,18,31]; @symbol_type<0> = [String,55,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 58; @symbol_moduledef = [system_loc__hint_button_left_top,58,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 58; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 59; @position = 18; @symbol_constdef = [exclude,59,18,25]; @symbol_type<0> = [Boolean,59,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 62; @symbol_moduledef = [prompt_font__title,62,15,33]; ]
+        module prompt_font__title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 62; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 63 18 ]
+                symbol [ Graphics %tmp.15 63 34 42 ];
+                %tmp.15 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.16 63 43 62 ];
+                %tmp.16 = getv %tmp.15 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.17 63 63 71 ];
+                %tmp.17 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.18 63 72 92 ];
+                %tmp.18 = getv %tmp.17 :TEXT_JUSTIFY_VCENTER;
+                %tmp.19 = bitor %tmp.16 %tmp.18;
+                putv self :justification %tmp.19;
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 64 18 ]
+                symbol [ Graphics %tmp.20 64 25 33 ];
+                %tmp.20 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.21 64 34 43 ];
+                %tmp.21 = getv %tmp.20 :FONT_TINY;
+                putv self :font %tmp.21;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 63; @position = 18; @symbol_constdef = [justification,63,18,31]; ]
+            const justification;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 64; @position = 18; @symbol_constdef = [font,64,18,22]; ]
+            const font;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 67; @symbol_moduledef = [system_icon_dark__discard,67,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 67; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 68; @position = 18; @symbol_constdef = [filename,68,18,26]; @symbol_type<0> = [String,68,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__discard.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 69; @position = 18; @symbol_constdef = [compress,69,18,26]; @symbol_type<0> = [String,69,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 70; @position = 18; @symbol_constdef = [dithering,70,18,27]; @symbol_type<0> = [String,70,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 71; @position = 18; @symbol_constdef = [automaticPalette,71,18,34]; @symbol_type<0> = [String,71,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 72; @position = 18; @symbol_constdef = [packingFormat,72,18,31]; @symbol_type<0> = [String,72,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 75; @symbol_moduledef = [system_size__menu_item,75,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 75; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 76; @position = 18; @symbol_constdef = [width,76,18,23]; @symbol_type<0> = [Number,76,27,33]; ]
+            const width as Number = 454;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 77; @position = 18; @symbol_constdef = [height,77,18,24]; @symbol_type<0> = [Number,77,28,34]; ]
+            const height as Number = 108;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 80; @symbol_moduledef = [system_color_dark__text,80,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 80; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 82 18 ]
+                symbol [ Graphics %tmp.22 82 31 39 ];
+                %tmp.22 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.23 82 40 57 ];
+                %tmp.23 = getv %tmp.22 :COLOR_TRANSPARENT;
+                putv self :background %tmp.23;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 81; @position = 18; @symbol_constdef = [color,81,18,23]; @symbol_type<0> = [Number,81,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 82; @position = 18; @symbol_constdef = [background,82,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 85; @symbol_moduledef = [system_icon_destructive__discard,85,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 85; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 86; @position = 18; @symbol_constdef = [filename,86,18,26]; @symbol_type<0> = [String,86,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_destructive__discard.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 87; @position = 18; @symbol_constdef = [dithering,87,18,27]; @symbol_type<0> = [String,87,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 88; @position = 18; @symbol_constdef = [packingFormat,88,18,31]; @symbol_type<0> = [String,88,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 91; @symbol_moduledef = [system_icon_dark__hint_action_menu,91,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 91; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 92; @position = 18; @symbol_constdef = [filename,92,18,26]; @symbol_type<0> = [String,92,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__hint_button_right_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 93; @position = 18; @symbol_constdef = [dithering,93,18,27]; @symbol_type<0> = [String,93,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 94; @position = 18; @symbol_constdef = [packingFormat,94,18,31]; @symbol_type<0> = [String,94,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 97; @symbol_moduledef = [prompt_size__title,97,15,33]; ]
+        module prompt_size__title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 97; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 98; @position = 18; @symbol_constdef = [width,98,18,23]; @symbol_type<0> = [Number,98,27,33]; ]
+            const width as Number = 287;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 99; @position = 18; @symbol_constdef = [height,99,18,24]; @symbol_type<0> = [Number,99,28,34]; ]
+            const height as Number = 97;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 102; @symbol_moduledef = [confirmation_font__body,102,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 102; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 103 18 ]
+                symbol [ Graphics %tmp.24 103 34 42 ];
+                %tmp.24 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.25 103 43 62 ];
+                %tmp.25 = getv %tmp.24 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.26 103 63 71 ];
+                %tmp.26 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.27 103 72 92 ];
+                %tmp.27 = getv %tmp.26 :TEXT_JUSTIFY_VCENTER;
+                %tmp.28 = bitor %tmp.25 %tmp.27;
+                putv self :justification %tmp.28;
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 104 18 ]
+                symbol [ Graphics %tmp.29 104 25 33 ];
+                %tmp.29 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.30 104 34 43 ];
+                %tmp.30 = getv %tmp.29 :FONT_TINY;
+                putv self :font %tmp.30;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 103; @position = 18; @symbol_constdef = [justification,103,18,31]; ]
+            const justification;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 104; @position = 18; @symbol_constdef = [font,104,18,22]; ]
+            const font;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 107; @symbol_moduledef = [system_color_dark__background,107,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 107; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 108; @position = 18; @symbol_constdef = [color,108,18,23]; @symbol_type<0> = [Number,108,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 109; @position = 18; @symbol_constdef = [background,109,18,28]; @symbol_type<0> = [Number,109,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 112; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,112,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 112; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 113; @position = 18; @symbol_constdef = [filename,113,18,26]; @symbol_type<0> = [String,113,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_destructive__hint_button_left_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 114; @position = 18; @symbol_constdef = [dithering,114,18,27]; @symbol_type<0> = [String,114,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 115; @position = 18; @symbol_constdef = [packingFormat,115,18,31]; @symbol_type<0> = [String,115,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 118; @symbol_moduledef = [system_size__launch_icon,118,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 118; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 119; @position = 18; @symbol_constdef = [scaleX,119,18,24]; @symbol_type<0> = [Number,119,28,34]; ]
+            const scaleX as Number = 65;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 120; @position = 18; @symbol_constdef = [scaleY,120,18,24]; @symbol_type<0> = [Number,120,28,34]; ]
+            const scaleY as Number = 65;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 121; @position = 18; @symbol_constdef = [scaleRelativeTo,121,18,33]; @symbol_type<0> = [String,121,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 124; @symbol_moduledef = [confirmation_input__confirm,124,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 124; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 125 18 ]
+                symbol [ WatchUi %tmp.31 125 27 34 ];
+                %tmp.31 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.32 125 35 44 ];
+                %tmp.32 = getv %tmp.31 :KEY_ENTER;
+                putv self :button %tmp.32;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 125; @position = 18; @symbol_constdef = [button,125,18,24]; ]
+            const button;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 128; @symbol_moduledef = [prompt_font__body_with_title,128,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 128; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 129 18 ]
+                symbol [ Graphics %tmp.33 129 34 42 ];
+                %tmp.33 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.34 129 43 62 ];
+                %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.34;
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 130 18 ]
+                symbol [ Graphics %tmp.35 130 25 33 ];
+                %tmp.35 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.36 130 34 44 ];
+                %tmp.36 = getv %tmp.35 :FONT_XTINY;
+                putv self :font %tmp.36;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 129; @position = 18; @symbol_constdef = [justification,129,18,31]; ]
+            const justification;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 130; @position = 18; @symbol_constdef = [font,130,18,22]; ]
+            const font;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 133; @symbol_moduledef = [confirmation_loc__body,133,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 133; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 134; @position = 18; @symbol_constdef = [x,134,18,19]; @symbol_type<0> = [Number,134,23,29]; ]
+            const x as Number = 70;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 135; @position = 18; @symbol_constdef = [y,135,18,19]; @symbol_type<0> = [Number,135,23,29]; ]
+            const y as Number = 104;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 138; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,138,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 138; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 139; @position = 18; @symbol_constdef = [filename,139,18,26]; @symbol_type<0> = [String,139,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_destructive__hint_button_left_bottom.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 140; @position = 18; @symbol_constdef = [dithering,140,18,27]; @symbol_type<0> = [String,140,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 141; @position = 18; @symbol_constdef = [packingFormat,141,18,31]; @symbol_type<0> = [String,141,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 144; @symbol_moduledef = [prompt_color_dark__background,144,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 144; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 145; @position = 18; @symbol_constdef = [color,145,18,23]; @symbol_type<0> = [Number,145,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 146; @position = 18; @symbol_constdef = [background,146,18,28]; @symbol_type<0> = [Number,146,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 149; @symbol_moduledef = [system_icon_destructive__hint_action_menu,149,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 149; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 150; @position = 18; @symbol_constdef = [filename,150,18,26]; @symbol_type<0> = [String,150,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 151; @position = 18; @symbol_constdef = [dithering,151,18,27]; @symbol_type<0> = [String,151,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 152; @position = 18; @symbol_constdef = [packingFormat,152,18,31]; @symbol_type<0> = [String,152,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 155; @symbol_moduledef = [system_loc__hint_action_menu,155,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 155; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 156; @position = 18; @symbol_constdef = [x,156,18,19]; @symbol_type<0> = [Number,156,23,29]; ]
+            const x as Number = 379;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 157; @position = 18; @symbol_constdef = [y,157,18,19]; @symbol_type<0> = [Number,157,23,29]; ]
+            const y as Number = 89;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 160; @symbol_moduledef = [confirmation_icon__hint_confirm,160,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 160; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 161; @position = 18; @symbol_constdef = [filename,161,18,26]; @symbol_type<0> = [String,161,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\confirmation_icon__hint_completion.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 162; @position = 18; @symbol_constdef = [dithering,162,18,27]; @symbol_type<0> = [String,162,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 163; @position = 18; @symbol_constdef = [packingFormat,163,18,31]; @symbol_type<0> = [String,163,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 166; @symbol_moduledef = [system_loc__hint_button_left_middle,166,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 166; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 167; @position = 18; @symbol_constdef = [x,167,18,19]; @symbol_type<0> = [Number,167,23,29]; ]
+            const x as Number = 3;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 168; @position = 18; @symbol_constdef = [y,168,18,19]; @symbol_type<0> = [Number,168,23,29]; ]
+            const y as Number = 184;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 171; @symbol_moduledef = [prompt_size__body_no_title,171,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 171; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 172; @position = 18; @symbol_constdef = [width,172,18,23]; @symbol_type<0> = [Number,172,27,33]; ]
+            const width as Number = 302;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 173; @position = 18; @symbol_constdef = [height,173,18,24]; @symbol_type<0> = [Number,173,28,34]; ]
+            const height as Number = 315;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 176; @symbol_moduledef = [system_icon_light__hint_button_left_top,176,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 176; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 177; @position = 18; @symbol_constdef = [filename,177,18,26]; @symbol_type<0> = [String,177,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__hint_button_left_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 178; @position = 18; @symbol_constdef = [dithering,178,18,27]; @symbol_type<0> = [String,178,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 179; @position = 18; @symbol_constdef = [packingFormat,179,18,31]; @symbol_type<0> = [String,179,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 182; @symbol_moduledef = [prompt_color_light__background,182,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 182; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 183; @position = 18; @symbol_constdef = [color,183,18,23]; @symbol_type<0> = [Number,183,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 184; @position = 18; @symbol_constdef = [background,184,18,28]; @symbol_type<0> = [Number,184,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 187; @symbol_moduledef = [confirmation_input__delete,187,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 187; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 188 18 ]
+                symbol [ WatchUi %tmp.37 188 27 34 ];
+                %tmp.37 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.38 188 35 43 ];
+                %tmp.38 = getv %tmp.37 :KEY_DOWN;
+                putv self :button %tmp.38;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 188; @position = 18; @symbol_constdef = [button,188,18,24]; ]
+            const button;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 191; @symbol_moduledef = [system_icon_dark__hint_button_left_top,191,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 191; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 192; @position = 18; @symbol_constdef = [filename,192,18,26]; @symbol_type<0> = [String,192,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__hint_button_left_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 193; @position = 18; @symbol_constdef = [dithering,193,18,27]; @symbol_type<0> = [String,193,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 194; @position = 18; @symbol_constdef = [packingFormat,194,18,31]; @symbol_type<0> = [String,194,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 197; @symbol_moduledef = [system_input__action_menu,197,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 197; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 198 18 ]
+                symbol [ WatchUi %tmp.39 198 27 34 ];
+                %tmp.39 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.40 198 35 44 ];
+                %tmp.40 = getv %tmp.39 :KEY_ENTER;
+                putv self :button %tmp.40;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 198; @position = 18; @symbol_constdef = [button,198,18,24]; ]
+            const button;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 201; @symbol_moduledef = [system_icon_light__save,201,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 201; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 202; @position = 18; @symbol_constdef = [filename,202,18,26]; @symbol_type<0> = [String,202,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__save.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 203; @position = 18; @symbol_constdef = [compress,203,18,26]; @symbol_type<0> = [String,203,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 204; @position = 18; @symbol_constdef = [dithering,204,18,27]; @symbol_type<0> = [String,204,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 205; @position = 18; @symbol_constdef = [automaticPalette,205,18,34]; @symbol_type<0> = [String,205,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 206; @position = 18; @symbol_constdef = [packingFormat,206,18,31]; @symbol_type<0> = [String,206,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 209; @symbol_moduledef = [prompt_color_light__body,209,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 209; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 211 18 ]
+                symbol [ Graphics %tmp.41 211 31 39 ];
+                %tmp.41 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.42 211 40 57 ];
+                %tmp.42 = getv %tmp.41 :COLOR_TRANSPARENT;
+                putv self :background %tmp.42;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 210; @position = 18; @symbol_constdef = [color,210,18,23]; @symbol_type<0> = [Number,210,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 211; @position = 18; @symbol_constdef = [background,211,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 214; @symbol_moduledef = [system_loc__subwindow,214,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 214; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 215; @position = 18; @symbol_constdef = [exclude,215,18,25]; @symbol_type<0> = [Boolean,215,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 218; @symbol_moduledef = [system_icon_light__warning,218,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 218; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 219; @position = 18; @symbol_constdef = [filename,219,18,26]; @symbol_type<0> = [String,219,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__warning.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 220; @position = 18; @symbol_constdef = [compress,220,18,26]; @symbol_type<0> = [String,220,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 221; @position = 18; @symbol_constdef = [dithering,221,18,27]; @symbol_type<0> = [String,221,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 222; @position = 18; @symbol_constdef = [automaticPalette,222,18,34]; @symbol_type<0> = [String,222,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 223; @position = 18; @symbol_constdef = [packingFormat,223,18,31]; @symbol_type<0> = [String,223,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 226; @symbol_moduledef = [confirmation_color_light__body,226,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 226; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 228 18 ]
+                symbol [ Graphics %tmp.43 228 31 39 ];
+                %tmp.43 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.44 228 40 57 ];
+                %tmp.44 = getv %tmp.43 :COLOR_TRANSPARENT;
+                putv self :background %tmp.44;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 227; @position = 18; @symbol_constdef = [color,227,18,23]; @symbol_type<0> = [Number,227,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 228; @position = 18; @symbol_constdef = [background,228,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 231; @symbol_moduledef = [confirmation_icon_light__hint_keep,231,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 231; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 232; @position = 18; @symbol_constdef = [filename,232,18,26]; @symbol_type<0> = [String,232,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\confirmation_icon__hint_keep.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 233; @position = 18; @symbol_constdef = [dithering,233,18,27]; @symbol_type<0> = [String,233,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 234; @position = 18; @symbol_constdef = [packingFormat,234,18,31]; @symbol_type<0> = [String,234,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 237; @symbol_moduledef = [activity_color_light__background,237,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 237; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 238; @position = 18; @symbol_constdef = [color,238,18,23]; @symbol_type<0> = [Number,238,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 239; @position = 18; @symbol_constdef = [background,239,18,28]; @symbol_type<0> = [Number,239,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 242; @symbol_moduledef = [system_icon_positive__hint_button_right_top,242,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 242; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 243; @position = 18; @symbol_constdef = [filename,243,18,26]; @symbol_type<0> = [String,243,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_positive__hint_button_right_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 244; @position = 18; @symbol_constdef = [dithering,244,18,27]; @symbol_type<0> = [String,244,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 245; @position = 18; @symbol_constdef = [packingFormat,245,18,31]; @symbol_type<0> = [String,245,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 248; @symbol_moduledef = [system_size__screen,248,15,34]; ]
+        module system_size__screen {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 248; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 249; @position = 18; @symbol_constdef = [width,249,18,23]; @symbol_type<0> = [Number,249,27,33]; ]
+            const width as Number = 454;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 250; @position = 18; @symbol_constdef = [height,250,18,24]; @symbol_type<0> = [Number,250,28,34]; ]
+            const height as Number = 454;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 253; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,253,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 253; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 254; @position = 18; @symbol_constdef = [filename,254,18,26]; @symbol_type<0> = [String,254,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_destructive__hint_button_right_bottom.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 255; @position = 18; @symbol_constdef = [dithering,255,18,27]; @symbol_type<0> = [String,255,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 256; @position = 18; @symbol_constdef = [packingFormat,256,18,31]; @symbol_type<0> = [String,256,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 259; @symbol_moduledef = [system_color_light__background,259,15,45]; ]
+        module system_color_light__background {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 259; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 260; @position = 18; @symbol_constdef = [color,260,18,23]; @symbol_type<0> = [Number,260,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 261; @position = 18; @symbol_constdef = [background,261,18,28]; @symbol_type<0> = [Number,261,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 264; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,264,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 264; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 265; @position = 18; @symbol_constdef = [filename,265,18,26]; @symbol_type<0> = [String,265,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 266; @position = 18; @symbol_constdef = [dithering,266,18,27]; @symbol_type<0> = [String,266,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 267; @position = 18; @symbol_constdef = [packingFormat,267,18,31]; @symbol_type<0> = [String,267,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 270; @symbol_moduledef = [confirmation_loc__hint_confirm,270,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 270; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 271; @position = 18; @symbol_constdef = [x,271,18,19]; @symbol_type<0> = [Number,271,23,29]; ]
+            const x as Number = 379;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 272; @position = 18; @symbol_constdef = [y,272,18,19]; @symbol_type<0> = [Number,272,23,29]; ]
+            const y as Number = 89;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 275; @symbol_moduledef = [activity_color_dark__text,275,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 275; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 277 18 ]
+                symbol [ Graphics %tmp.45 277 31 39 ];
+                %tmp.45 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.46 277 40 57 ];
+                %tmp.46 = getv %tmp.45 :COLOR_TRANSPARENT;
+                putv self :background %tmp.46;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 276; @position = 18; @symbol_constdef = [color,276,18,23]; @symbol_type<0> = [Number,276,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 277; @position = 18; @symbol_constdef = [background,277,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 280; @symbol_moduledef = [confirmation_input__keep,280,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 280; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 281 18 ]
+                symbol [ WatchUi %tmp.47 281 27 34 ];
+                %tmp.47 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ESC %tmp.48 281 35 42 ];
+                %tmp.48 = getv %tmp.47 :KEY_ESC;
+                putv self :button %tmp.48;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 281; @position = 18; @symbol_constdef = [button,281,18,24]; ]
+            const button;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 284; @symbol_moduledef = [prompt_loc__body_with_title,284,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 284; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 285; @position = 18; @symbol_constdef = [x,285,18,19]; @symbol_type<0> = [Number,285,23,29]; ]
+            const x as Number = 76;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 286; @position = 18; @symbol_constdef = [y,286,18,19]; @symbol_type<0> = [Number,286,23,29]; ]
+            const y as Number = 131;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 289; @symbol_moduledef = [system_icon_dark__search,289,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 289; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 290; @position = 18; @symbol_constdef = [filename,290,18,26]; @symbol_type<0> = [String,290,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__search.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 291; @position = 18; @symbol_constdef = [compress,291,18,26]; @symbol_type<0> = [String,291,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 292; @position = 18; @symbol_constdef = [dithering,292,18,27]; @symbol_type<0> = [String,292,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 293; @position = 18; @symbol_constdef = [automaticPalette,293,18,34]; @symbol_type<0> = [String,293,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 294; @position = 18; @symbol_constdef = [packingFormat,294,18,31]; @symbol_type<0> = [String,294,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 297; @symbol_moduledef = [activity_color_light__text,297,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 297; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 299 18 ]
+                symbol [ Graphics %tmp.49 299 31 39 ];
+                %tmp.49 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.50 299 40 57 ];
+                %tmp.50 = getv %tmp.49 :COLOR_TRANSPARENT;
+                putv self :background %tmp.50;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 298; @position = 18; @symbol_constdef = [color,298,18,23]; @symbol_type<0> = [Number,298,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 299; @position = 18; @symbol_constdef = [background,299,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 302; @symbol_moduledef = [confirmation_icon__hint_keep,302,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 302; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 303; @position = 18; @symbol_constdef = [filename,303,18,26]; @symbol_type<0> = [String,303,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\confirmation_icon__hint_keep.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 304; @position = 18; @symbol_constdef = [dithering,304,18,27]; @symbol_type<0> = [String,304,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 305; @position = 18; @symbol_constdef = [packingFormat,305,18,31]; @symbol_type<0> = [String,305,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 308; @symbol_moduledef = [system_icon_dark__save,308,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 308; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 309; @position = 18; @symbol_constdef = [filename,309,18,26]; @symbol_type<0> = [String,309,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__save.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 310; @position = 18; @symbol_constdef = [compress,310,18,26]; @symbol_type<0> = [String,310,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 311; @position = 18; @symbol_constdef = [dithering,311,18,27]; @symbol_type<0> = [String,311,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 312; @position = 18; @symbol_constdef = [automaticPalette,312,18,34]; @symbol_type<0> = [String,312,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 313; @position = 18; @symbol_constdef = [packingFormat,313,18,31]; @symbol_type<0> = [String,313,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 316; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,316,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 316; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 317; @position = 18; @symbol_constdef = [filename,317,18,26]; @symbol_type<0> = [String,317,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_destructive__hint_button_left_middle.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 318; @position = 18; @symbol_constdef = [dithering,318,18,27]; @symbol_type<0> = [String,318,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 319; @position = 18; @symbol_constdef = [packingFormat,319,18,31]; @symbol_type<0> = [String,319,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 322; @symbol_moduledef = [system_icon_light__search,322,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 322; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 323; @position = 18; @symbol_constdef = [filename,323,18,26]; @symbol_type<0> = [String,323,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__search.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 324; @position = 18; @symbol_constdef = [compress,324,18,26]; @symbol_type<0> = [String,324,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 325; @position = 18; @symbol_constdef = [dithering,325,18,27]; @symbol_type<0> = [String,325,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 326; @position = 18; @symbol_constdef = [automaticPalette,326,18,34]; @symbol_type<0> = [String,326,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 327; @position = 18; @symbol_constdef = [packingFormat,327,18,31]; @symbol_type<0> = [String,327,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 330; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,330,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 330; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 331; @position = 18; @symbol_constdef = [filename,331,18,26]; @symbol_type<0> = [String,331,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__hint_button_left_bottom.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 332; @position = 18; @symbol_constdef = [dithering,332,18,27]; @symbol_type<0> = [String,332,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 333; @position = 18; @symbol_constdef = [packingFormat,333,18,31]; @symbol_type<0> = [String,333,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 336; @symbol_moduledef = [system_icon_positive__hint_button_left_top,336,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 336; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 337; @position = 18; @symbol_constdef = [filename,337,18,26]; @symbol_type<0> = [String,337,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_positive__hint_button_left_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 338; @position = 18; @symbol_constdef = [dithering,338,18,27]; @symbol_type<0> = [String,338,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 339; @position = 18; @symbol_constdef = [packingFormat,339,18,31]; @symbol_type<0> = [String,339,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 342; @symbol_moduledef = [system_loc__hint_button_right_bottom,342,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 342; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 343; @position = 18; @symbol_constdef = [x,343,18,19]; @symbol_type<0> = [Number,343,23,29]; ]
+            const x as Number = 369;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 344; @position = 18; @symbol_constdef = [y,344,18,19]; @symbol_type<0> = [Number,344,23,29]; ]
+            const y as Number = 283;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 347; @symbol_moduledef = [confirmation_icon_dark__hint_reject,347,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 347; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 348; @position = 18; @symbol_constdef = [filename,348,18,26]; @symbol_type<0> = [String,348,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\confirmation_icon__hint_reject.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 349; @position = 18; @symbol_constdef = [dithering,349,18,27]; @symbol_type<0> = [String,349,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 350; @position = 18; @symbol_constdef = [packingFormat,350,18,31]; @symbol_type<0> = [String,350,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 353; @symbol_moduledef = [confirmation_color_dark__body,353,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 353; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 355 18 ]
+                symbol [ Graphics %tmp.51 355 31 39 ];
+                %tmp.51 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.52 355 40 57 ];
+                %tmp.52 = getv %tmp.51 :COLOR_TRANSPARENT;
+                putv self :background %tmp.52;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 354; @position = 18; @symbol_constdef = [color,354,18,23]; @symbol_type<0> = [Number,354,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 355; @position = 18; @symbol_constdef = [background,355,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 358; @symbol_moduledef = [confirmation_icon_light__hint_confirm,358,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 358; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 359; @position = 18; @symbol_constdef = [filename,359,18,26]; @symbol_type<0> = [String,359,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\confirmation_icon__hint_completion.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 360; @position = 18; @symbol_constdef = [dithering,360,18,27]; @symbol_type<0> = [String,360,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 361; @position = 18; @symbol_constdef = [packingFormat,361,18,31]; @symbol_type<0> = [String,361,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 364; @symbol_moduledef = [prompt_color_dark__title,364,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 364; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 366 18 ]
+                symbol [ Graphics %tmp.53 366 31 39 ];
+                %tmp.53 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.54 366 40 57 ];
+                %tmp.54 = getv %tmp.53 :COLOR_TRANSPARENT;
+                putv self :background %tmp.54;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 365; @position = 18; @symbol_constdef = [color,365,18,23]; @symbol_type<0> = [Number,365,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 366; @position = 18; @symbol_constdef = [background,366,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 369; @symbol_moduledef = [system_icon_destructive__cancel,369,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 369; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 370; @position = 18; @symbol_constdef = [filename,370,18,26]; @symbol_type<0> = [String,370,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_destructive__cancel.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 371; @position = 18; @symbol_constdef = [dithering,371,18,27]; @symbol_type<0> = [String,371,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 372; @position = 18; @symbol_constdef = [packingFormat,372,18,31]; @symbol_type<0> = [String,372,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 375; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,375,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 375; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 376; @position = 18; @symbol_constdef = [filename,376,18,26]; @symbol_type<0> = [String,376,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 377; @position = 18; @symbol_constdef = [dithering,377,18,27]; @symbol_type<0> = [String,377,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 378; @position = 18; @symbol_constdef = [packingFormat,378,18,31]; @symbol_type<0> = [String,378,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 381; @symbol_moduledef = [prompt_loc__title,381,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 381; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 382; @position = 18; @symbol_constdef = [x,382,18,19]; @symbol_type<0> = [Number,382,23,29]; ]
+            const x as Number = 83;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 383; @position = 18; @symbol_constdef = [y,383,18,19]; @symbol_type<0> = [Number,383,23,29]; ]
+            const y as Number = 34;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 386; @symbol_moduledef = [confirmation_font_enhanced_readability__body,386,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 386; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 387 18 ]
+                symbol [ Graphics %tmp.55 387 34 42 ];
+                %tmp.55 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.56 387 43 62 ];
+                %tmp.56 = getv %tmp.55 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.57 387 63 71 ];
+                %tmp.57 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.58 387 72 92 ];
+                %tmp.58 = getv %tmp.57 :TEXT_JUSTIFY_VCENTER;
+                %tmp.59 = bitor %tmp.56 %tmp.58;
+                putv self :justification %tmp.59;
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 388 18 ]
+                symbol [ Graphics %tmp.60 388 25 33 ];
+                %tmp.60 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.61 388 34 44 ];
+                %tmp.61 = getv %tmp.60 :FONT_SMALL;
+                putv self :font %tmp.61;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 387; @position = 18; @symbol_constdef = [justification,387,18,31]; ]
+            const justification;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 388; @position = 18; @symbol_constdef = [font,388,18,22]; ]
+            const font;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 391; @symbol_moduledef = [prompt_color_light__title,391,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 391; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 393 18 ]
+                symbol [ Graphics %tmp.62 393 31 39 ];
+                %tmp.62 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.63 393 40 57 ];
+                %tmp.63 = getv %tmp.62 :COLOR_TRANSPARENT;
+                putv self :background %tmp.63;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 392; @position = 18; @symbol_constdef = [color,392,18,23]; @symbol_type<0> = [Number,392,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 393; @position = 18; @symbol_constdef = [background,393,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 396; @symbol_moduledef = [system_icon_dark__hint_button_right_top,396,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 396; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 397; @position = 18; @symbol_constdef = [filename,397,18,26]; @symbol_type<0> = [String,397,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__hint_button_right_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 398; @position = 18; @symbol_constdef = [dithering,398,18,27]; @symbol_type<0> = [String,398,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 399; @position = 18; @symbol_constdef = [packingFormat,399,18,31]; @symbol_type<0> = [String,399,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 402; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,402,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 402; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 403; @position = 18; @symbol_constdef = [filename,403,18,26]; @symbol_type<0> = [String,403,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__hint_button_left_middle.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 404; @position = 18; @symbol_constdef = [dithering,404,18,27]; @symbol_type<0> = [String,404,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 405; @position = 18; @symbol_constdef = [packingFormat,405,18,31]; @symbol_type<0> = [String,405,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 408; @symbol_moduledef = [confirmation_icon_dark__hint_keep,408,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 408; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 409; @position = 18; @symbol_constdef = [filename,409,18,26]; @symbol_type<0> = [String,409,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\confirmation_icon__hint_keep.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 410; @position = 18; @symbol_constdef = [dithering,410,18,27]; @symbol_type<0> = [String,410,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 411; @position = 18; @symbol_constdef = [packingFormat,411,18,31]; @symbol_type<0> = [String,411,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 414; @symbol_moduledef = [system_icon_light__cancel,414,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 414; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 415; @position = 18; @symbol_constdef = [filename,415,18,26]; @symbol_type<0> = [String,415,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__cancel.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 416; @position = 18; @symbol_constdef = [compress,416,18,26]; @symbol_type<0> = [String,416,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 417; @position = 18; @symbol_constdef = [dithering,417,18,27]; @symbol_type<0> = [String,417,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 418; @position = 18; @symbol_constdef = [automaticPalette,418,18,34]; @symbol_type<0> = [String,418,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 419; @position = 18; @symbol_constdef = [packingFormat,419,18,31]; @symbol_type<0> = [String,419,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 422; @symbol_moduledef = [confirmation_icon_light__hint_reject,422,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 422; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 423; @position = 18; @symbol_constdef = [filename,423,18,26]; @symbol_type<0> = [String,423,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\confirmation_icon__hint_reject.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 424; @position = 18; @symbol_constdef = [dithering,424,18,27]; @symbol_type<0> = [String,424,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 425; @position = 18; @symbol_constdef = [packingFormat,425,18,31]; @symbol_type<0> = [String,425,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 428; @symbol_moduledef = [system_icon_light__about,428,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 428; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 429; @position = 18; @symbol_constdef = [filename,429,18,26]; @symbol_type<0> = [String,429,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__about.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 430; @position = 18; @symbol_constdef = [compress,430,18,26]; @symbol_type<0> = [String,430,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 431; @position = 18; @symbol_constdef = [dithering,431,18,27]; @symbol_type<0> = [String,431,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 432; @position = 18; @symbol_constdef = [automaticPalette,432,18,34]; @symbol_type<0> = [String,432,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 433; @position = 18; @symbol_constdef = [packingFormat,433,18,31]; @symbol_type<0> = [String,433,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 436; @symbol_moduledef = [system_size__toast_icon,436,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 436; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 437; @position = 18; @symbol_constdef = [scaleX,437,18,24]; @symbol_type<0> = [Number,437,28,34]; ]
+            const scaleX as Number = 45;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 438; @position = 18; @symbol_constdef = [scaleY,438,18,24]; @symbol_type<0> = [Number,438,28,34]; ]
+            const scaleY as Number = 45;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 439; @position = 18; @symbol_constdef = [scaleRelativeTo,439,18,33]; @symbol_type<0> = [String,439,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 442; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,442,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 442; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 443; @position = 18; @symbol_constdef = [exclude,443,18,25]; @symbol_type<0> = [Boolean,443,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 446; @symbol_moduledef = [confirmation_icon__hint_reject,446,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 446; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 447; @position = 18; @symbol_constdef = [filename,447,18,26]; @symbol_type<0> = [String,447,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\confirmation_icon__hint_reject.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 448; @position = 18; @symbol_constdef = [dithering,448,18,27]; @symbol_type<0> = [String,448,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 449; @position = 18; @symbol_constdef = [packingFormat,449,18,31]; @symbol_type<0> = [String,449,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 452; @symbol_moduledef = [system_icon_light__hint_action_menu,452,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 452; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 453; @position = 18; @symbol_constdef = [filename,453,18,26]; @symbol_type<0> = [String,453,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__hint_button_right_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 454; @position = 18; @symbol_constdef = [dithering,454,18,27]; @symbol_type<0> = [String,454,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 455; @position = 18; @symbol_constdef = [packingFormat,455,18,31]; @symbol_type<0> = [String,455,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 458; @symbol_moduledef = [system_icon_light__hint_button_right_middle,458,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 458; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 459; @position = 18; @symbol_constdef = [exclude,459,18,25]; @symbol_type<0> = [Boolean,459,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 462; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,462,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 462; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 463; @position = 18; @symbol_constdef = [exclude,463,18,25]; @symbol_type<0> = [Boolean,463,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 466; @symbol_moduledef = [confirmation_loc__hint_reject,466,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 466; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 467; @position = 18; @symbol_constdef = [x,467,18,19]; @symbol_type<0> = [Number,467,23,29]; ]
+            const x as Number = 16;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 468; @position = 18; @symbol_constdef = [y,468,18,19]; @symbol_type<0> = [Number,468,23,29]; ]
+            const y as Number = 284;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 471; @symbol_moduledef = [confirmation_icon_dark__hint_delete,471,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 471; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 472; @position = 18; @symbol_constdef = [filename,472,18,26]; @symbol_type<0> = [String,472,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\confirmation_icon__hint_delete.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 473; @position = 18; @symbol_constdef = [dithering,473,18,27]; @symbol_type<0> = [String,473,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 474; @position = 18; @symbol_constdef = [packingFormat,474,18,31]; @symbol_type<0> = [String,474,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 477; @symbol_moduledef = [activity_color_dark__background,477,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 477; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 478; @position = 18; @symbol_constdef = [color,478,18,23]; @symbol_type<0> = [Number,478,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 479; @position = 18; @symbol_constdef = [background,479,18,28]; @symbol_type<0> = [Number,479,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 482; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,482,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 482; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 483; @position = 18; @symbol_constdef = [filename,483,18,26]; @symbol_type<0> = [String,483,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__hint_button_left_bottom.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 484; @position = 18; @symbol_constdef = [dithering,484,18,27]; @symbol_type<0> = [String,484,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 485; @position = 18; @symbol_constdef = [packingFormat,485,18,31]; @symbol_type<0> = [String,485,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 488; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,488,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 488; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 489; @position = 18; @symbol_constdef = [filename,489,18,26]; @symbol_type<0> = [String,489,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_positive__hint_button_left_middle.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 490; @position = 18; @symbol_constdef = [dithering,490,18,27]; @symbol_type<0> = [String,490,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 491; @position = 18; @symbol_constdef = [packingFormat,491,18,31]; @symbol_type<0> = [String,491,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 494; @symbol_moduledef = [system_size__menu_icon,494,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 494; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 495; @position = 18; @symbol_constdef = [scaleX,495,18,24]; @symbol_type<0> = [Number,495,28,34]; ]
+            const scaleX as Number = 55;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 496; @position = 18; @symbol_constdef = [scaleY,496,18,24]; @symbol_type<0> = [Number,496,28,34]; ]
+            const scaleY as Number = 55;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 497; @position = 18; @symbol_constdef = [scaleRelativeTo,497,18,33]; @symbol_type<0> = [String,497,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 500; @symbol_moduledef = [system_icon_destructive__warning,500,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 500; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 501; @position = 18; @symbol_constdef = [filename,501,18,26]; @symbol_type<0> = [String,501,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_destructive__warning.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 502; @position = 18; @symbol_constdef = [dithering,502,18,27]; @symbol_type<0> = [String,502,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 503; @position = 18; @symbol_constdef = [packingFormat,503,18,31]; @symbol_type<0> = [String,503,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 506; @symbol_moduledef = [system_loc__hint_button_right_middle,506,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 506; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 507; @position = 18; @symbol_constdef = [exclude,507,18,25]; @symbol_type<0> = [Boolean,507,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 510; @symbol_moduledef = [system_icon_dark__cancel,510,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 510; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 511; @position = 18; @symbol_constdef = [filename,511,18,26]; @symbol_type<0> = [String,511,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__cancel.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 512; @position = 18; @symbol_constdef = [compress,512,18,26]; @symbol_type<0> = [String,512,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 513; @position = 18; @symbol_constdef = [dithering,513,18,27]; @symbol_type<0> = [String,513,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 514; @position = 18; @symbol_constdef = [automaticPalette,514,18,34]; @symbol_type<0> = [String,514,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 515; @position = 18; @symbol_constdef = [packingFormat,515,18,31]; @symbol_type<0> = [String,515,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 518; @symbol_moduledef = [prompt_size__body_with_title,518,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 518; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 519; @position = 18; @symbol_constdef = [width,519,18,23]; @symbol_type<0> = [Number,519,27,33]; ]
+            const width as Number = 302;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 520; @position = 18; @symbol_constdef = [height,520,18,24]; @symbol_type<0> = [Number,520,28,34]; ]
+            const height as Number = 254;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 523; @symbol_moduledef = [system_loc__hint_button_right_top,523,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 523; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 524; @position = 18; @symbol_constdef = [x,524,18,19]; @symbol_type<0> = [Number,524,23,29]; ]
+            const x as Number = 379;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 525; @position = 18; @symbol_constdef = [y,525,18,19]; @symbol_type<0> = [Number,525,23,29]; ]
+            const y as Number = 89;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 528; @symbol_moduledef = [system_color_light__text,528,15,39]; ]
+        module system_color_light__text {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 528; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 530 18 ]
+                symbol [ Graphics %tmp.64 530 31 39 ];
+                %tmp.64 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.65 530 40 57 ];
+                %tmp.65 = getv %tmp.64 :COLOR_TRANSPARENT;
+                putv self :background %tmp.65;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 529; @position = 18; @symbol_constdef = [color,529,18,23]; @symbol_type<0> = [Number,529,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 530; @position = 18; @symbol_constdef = [background,530,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 533; @symbol_moduledef = [system_icon_light__check,533,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 533; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 534; @position = 18; @symbol_constdef = [filename,534,18,26]; @symbol_type<0> = [String,534,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__check.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 535; @position = 18; @symbol_constdef = [compress,535,18,26]; @symbol_type<0> = [String,535,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 536; @position = 18; @symbol_constdef = [dithering,536,18,27]; @symbol_type<0> = [String,536,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 537; @position = 18; @symbol_constdef = [automaticPalette,537,18,34]; @symbol_type<0> = [String,537,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 538; @position = 18; @symbol_constdef = [packingFormat,538,18,31]; @symbol_type<0> = [String,538,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 541; @symbol_moduledef = [confirmation_input__reject,541,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 541; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 542 18 ]
+                symbol [ WatchUi %tmp.66 542 27 34 ];
+                %tmp.66 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.67 542 35 43 ];
+                %tmp.67 = getv %tmp.66 :KEY_DOWN;
+                putv self :button %tmp.67;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 542; @position = 18; @symbol_constdef = [button,542,18,24]; ]
+            const button;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 545; @symbol_moduledef = [system_icon_light__revert,545,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 545; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 546; @position = 18; @symbol_constdef = [filename,546,18,26]; @symbol_type<0> = [String,546,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__revert.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 547; @position = 18; @symbol_constdef = [compress,547,18,26]; @symbol_type<0> = [String,547,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 548; @position = 18; @symbol_constdef = [dithering,548,18,27]; @symbol_type<0> = [String,548,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 549; @position = 18; @symbol_constdef = [automaticPalette,549,18,34]; @symbol_type<0> = [String,549,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 550; @position = 18; @symbol_constdef = [packingFormat,550,18,31]; @symbol_type<0> = [String,550,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 553; @symbol_moduledef = [system_size__subwindow,553,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 553; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 554; @position = 18; @symbol_constdef = [exclude,554,18,25]; @symbol_type<0> = [Boolean,554,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 557; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,557,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 557; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 558; @position = 18; @symbol_constdef = [filename,558,18,26]; @symbol_type<0> = [String,558,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_positive__hint_button_left_bottom.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 559; @position = 18; @symbol_constdef = [dithering,559,18,27]; @symbol_type<0> = [String,559,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 560; @position = 18; @symbol_constdef = [packingFormat,560,18,31]; @symbol_type<0> = [String,560,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 563; @symbol_moduledef = [system_icon_dark__check,563,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 563; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 564; @position = 18; @symbol_constdef = [filename,564,18,26]; @symbol_type<0> = [String,564,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__check.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 565; @position = 18; @symbol_constdef = [compress,565,18,26]; @symbol_type<0> = [String,565,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 566; @position = 18; @symbol_constdef = [dithering,566,18,27]; @symbol_type<0> = [String,566,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 567; @position = 18; @symbol_constdef = [automaticPalette,567,18,34]; @symbol_type<0> = [String,567,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 568; @position = 18; @symbol_constdef = [packingFormat,568,18,31]; @symbol_type<0> = [String,568,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 571; @symbol_moduledef = [confirmation_loc__hint_keep,571,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 571; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 572; @position = 18; @symbol_constdef = [x,572,18,19]; @symbol_type<0> = [Number,572,23,29]; ]
+            const x as Number = 372;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 573; @position = 18; @symbol_constdef = [y,573,18,19]; @symbol_type<0> = [Number,573,23,29]; ]
+            const y as Number = 286;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 576; @symbol_moduledef = [confirmation_loc__hint_delete,576,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 576; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 577; @position = 18; @symbol_constdef = [x,577,18,19]; @symbol_type<0> = [Number,577,23,29]; ]
+            const x as Number = 16;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 578; @position = 18; @symbol_constdef = [y,578,18,19]; @symbol_type<0> = [Number,578,23,29]; ]
+            const y as Number = 284;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 581; @symbol_moduledef = [system_icon_positive__hint_action_menu,581,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 581; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 582; @position = 18; @symbol_constdef = [filename,582,18,26]; @symbol_type<0> = [String,582,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_positive__hint_button_right_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 583; @position = 18; @symbol_constdef = [dithering,583,18,27]; @symbol_type<0> = [String,583,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 584; @position = 18; @symbol_constdef = [packingFormat,584,18,31]; @symbol_type<0> = [String,584,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 587; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,587,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 587; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 588; @position = 18; @symbol_constdef = [exclude,588,18,25]; @symbol_type<0> = [Boolean,588,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 591; @symbol_moduledef = [system_icon_light__hint_button_left_middle,591,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 591; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 592; @position = 18; @symbol_constdef = [filename,592,18,26]; @symbol_type<0> = [String,592,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__hint_button_left_middle.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 593; @position = 18; @symbol_constdef = [dithering,593,18,27]; @symbol_type<0> = [String,593,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 594; @position = 18; @symbol_constdef = [packingFormat,594,18,31]; @symbol_type<0> = [String,594,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 597; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,597,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 597; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 598; @position = 18; @symbol_constdef = [filename,598,18,26]; @symbol_type<0> = [String,598,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 599; @position = 18; @symbol_constdef = [dithering,599,18,27]; @symbol_type<0> = [String,599,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 600; @position = 18; @symbol_constdef = [packingFormat,600,18,31]; @symbol_type<0> = [String,600,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 603; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,603,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 603; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 604; @position = 18; @symbol_constdef = [filename,604,18,26]; @symbol_type<0> = [String,604,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 605; @position = 18; @symbol_constdef = [dithering,605,18,27]; @symbol_type<0> = [String,605,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 606; @position = 18; @symbol_constdef = [packingFormat,606,18,31]; @symbol_type<0> = [String,606,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 609; @symbol_moduledef = [system_icon_dark__revert,609,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 609; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 610; @position = 18; @symbol_constdef = [filename,610,18,26]; @symbol_type<0> = [String,610,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__revert.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 611; @position = 18; @symbol_constdef = [compress,611,18,26]; @symbol_type<0> = [String,611,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 612; @position = 18; @symbol_constdef = [dithering,612,18,27]; @symbol_type<0> = [String,612,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 613; @position = 18; @symbol_constdef = [automaticPalette,613,18,34]; @symbol_type<0> = [String,613,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 614; @position = 18; @symbol_constdef = [packingFormat,614,18,31]; @symbol_type<0> = [String,614,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 617; @symbol_moduledef = [confirmation_icon_light__hint_delete,617,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 617; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 618; @position = 18; @symbol_constdef = [filename,618,18,26]; @symbol_type<0> = [String,618,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\confirmation_icon__hint_delete.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 619; @position = 18; @symbol_constdef = [dithering,619,18,27]; @symbol_type<0> = [String,619,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 620; @position = 18; @symbol_constdef = [packingFormat,620,18,31]; @symbol_type<0> = [String,620,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 623; @symbol_moduledef = [system_icon_dark__question,623,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 623; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 624; @position = 18; @symbol_constdef = [filename,624,18,26]; @symbol_type<0> = [String,624,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__question.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 625; @position = 18; @symbol_constdef = [compress,625,18,26]; @symbol_type<0> = [String,625,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 626; @position = 18; @symbol_constdef = [dithering,626,18,27]; @symbol_type<0> = [String,626,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 627; @position = 18; @symbol_constdef = [automaticPalette,627,18,34]; @symbol_type<0> = [String,627,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 628; @position = 18; @symbol_constdef = [packingFormat,628,18,31]; @symbol_type<0> = [String,628,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 631; @symbol_moduledef = [system_icon_light__discard,631,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 631; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 632; @position = 18; @symbol_constdef = [filename,632,18,26]; @symbol_type<0> = [String,632,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__discard.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 633; @position = 18; @symbol_constdef = [compress,633,18,26]; @symbol_type<0> = [String,633,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 634; @position = 18; @symbol_constdef = [dithering,634,18,27]; @symbol_type<0> = [String,634,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 635; @position = 18; @symbol_constdef = [automaticPalette,635,18,34]; @symbol_type<0> = [String,635,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 636; @position = 18; @symbol_constdef = [packingFormat,636,18,31]; @symbol_type<0> = [String,636,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 639; @symbol_moduledef = [device_info,639,15,26]; ]
+        module device_info {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 639; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 641 18 ]
+                symbol [ Toybox %tmp.69 641 32 38 ];
+                %tmp.69 = getv ? :Toybox;
+                symbol [ System %tmp.70 641 39 45 ];
+                %tmp.70 = getv %tmp.69 :System;
+                symbol [ SCREEN_SHAPE_ROUND %tmp.71 641 46 64 ];
+                %tmp.71 = getv %tmp.70 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.71;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 640; @position = 18; @symbol_constdef = [screenWidth,640,18,29]; @symbol_type<0> = [Number,640,33,39]; ]
+            const screenWidth as Number = 454;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 641; @position = 18; @symbol_constdef = [screenShape,641,18,29]; ]
+            const screenShape;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 642; @position = 18; @symbol_constdef = [hasNightMode,642,18,30]; @symbol_type<0> = [Boolean,642,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 643; @position = 18; @symbol_constdef = [hasGpu,643,18,24]; @symbol_type<0> = [Boolean,643,28,35]; ]
+            const hasGpu as Boolean = true;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 644; @position = 18; @symbol_constdef = [screenHeight,644,18,30]; @symbol_type<0> = [Number,644,34,40]; ]
+            const screenHeight as Number = 454;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 645; @position = 18; @symbol_constdef = [hasTouchScreen,645,18,32]; @symbol_type<0> = [Boolean,645,36,43]; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 646; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,646,18,44]; @symbol_type<0> = [Boolean,646,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = true;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 649; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,649,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 649; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 650; @position = 18; @symbol_constdef = [filename,650,18,26]; @symbol_type<0> = [String,650,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\confirmation_icon__hint_completion.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 651; @position = 18; @symbol_constdef = [dithering,651,18,27]; @symbol_type<0> = [String,651,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 652; @position = 18; @symbol_constdef = [packingFormat,652,18,31]; @symbol_type<0> = [String,652,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 655; @symbol_moduledef = [prompt_font__body_no_title,655,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 655; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 656 18 ]
+                symbol [ Graphics %tmp.72 656 34 42 ];
+                %tmp.72 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.73 656 43 62 ];
+                %tmp.73 = getv %tmp.72 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.74 656 63 71 ];
+                %tmp.74 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.75 656 72 92 ];
+                %tmp.75 = getv %tmp.74 :TEXT_JUSTIFY_VCENTER;
+                %tmp.76 = bitor %tmp.73 %tmp.75;
+                putv self :justification %tmp.76;
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 657 18 ]
+                symbol [ Graphics %tmp.77 657 25 33 ];
+                %tmp.77 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.78 657 34 44 ];
+                %tmp.78 = getv %tmp.77 :FONT_XTINY;
+                putv self :font %tmp.78;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 656; @position = 18; @symbol_constdef = [justification,656,18,31]; ]
+            const justification;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 657; @position = 18; @symbol_constdef = [font,657,18,22]; ]
+            const font;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 660; @symbol_moduledef = [prompt_size__title_icon,660,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 660; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 661; @position = 18; @symbol_constdef = [scaleX,661,18,24]; @symbol_type<0> = [Float,661,28,33]; ]
+            const scaleX as Float = 0.13;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 662; @position = 18; @symbol_constdef = [scaleRelativeTo,662,18,33]; @symbol_type<0> = [String,662,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 665; @symbol_moduledef = [system_icon_dark__warning,665,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 665; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 666; @position = 18; @symbol_constdef = [filename,666,18,26]; @symbol_type<0> = [String,666,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__warning.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 667; @position = 18; @symbol_constdef = [compress,667,18,26]; @symbol_type<0> = [String,667,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 668; @position = 18; @symbol_constdef = [dithering,668,18,27]; @symbol_type<0> = [String,668,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 669; @position = 18; @symbol_constdef = [automaticPalette,669,18,34]; @symbol_type<0> = [String,669,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 670; @position = 18; @symbol_constdef = [packingFormat,670,18,31]; @symbol_type<0> = [String,670,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 673; @symbol_moduledef = [prompt_loc__title_icon,673,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 673; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 674; @position = 18; @symbol_constdef = [x,674,18,19]; @symbol_type<0> = [Number,674,23,29]; ]
+            const x as Number = 227;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 675; @position = 18; @symbol_constdef = [y,675,18,19]; @symbol_type<0> = [Number,675,23,29]; ]
+            const y as Number = 46;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 676; @position = 18; @symbol_constdef = [horizontalJustification,676,18,41]; @symbol_type<0> = [String,676,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 677; @position = 18; @symbol_constdef = [verticalJustification,677,18,39]; @symbol_type<0> = [String,677,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 680; @symbol_moduledef = [prompt_font_enhanced_readability__title,680,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 680; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 681 18 ]
+                symbol [ Graphics %tmp.79 681 34 42 ];
+                %tmp.79 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.80 681 43 62 ];
+                %tmp.80 = getv %tmp.79 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.81 681 63 71 ];
+                %tmp.81 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.82 681 72 92 ];
+                %tmp.82 = getv %tmp.81 :TEXT_JUSTIFY_VCENTER;
+                %tmp.83 = bitor %tmp.80 %tmp.82;
+                putv self :justification %tmp.83;
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 682 18 ]
+                symbol [ Graphics %tmp.84 682 25 33 ];
+                %tmp.84 = getm $.Toybox.Graphics;
+                symbol [ FONT_MEDIUM %tmp.85 682 34 45 ];
+                %tmp.85 = getv %tmp.84 :FONT_MEDIUM;
+                putv self :font %tmp.85;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 681; @position = 18; @symbol_constdef = [justification,681,18,31]; ]
+            const justification;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 682; @position = 18; @symbol_constdef = [font,682,18,22]; ]
+            const font;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 685; @symbol_moduledef = [prompt_color_dark__body,685,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 685; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen" 687 18 ]
+                symbol [ Graphics %tmp.86 687 31 39 ];
+                %tmp.86 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.87 687 40 57 ];
+                %tmp.87 = getv %tmp.86 :COLOR_TRANSPARENT;
+                putv self :background %tmp.87;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 686; @position = 18; @symbol_constdef = [color,686,18,23]; @symbol_type<0> = [Number,686,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 687; @position = 18; @symbol_constdef = [background,687,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 690; @symbol_moduledef = [confirmation_icon__hint_delete,690,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 690; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 691; @position = 18; @symbol_constdef = [filename,691,18,26]; @symbol_type<0> = [String,691,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\confirmation_icon__hint_delete.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 692; @position = 18; @symbol_constdef = [dithering,692,18,27]; @symbol_type<0> = [String,692,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 693; @position = 18; @symbol_constdef = [packingFormat,693,18,31]; @symbol_type<0> = [String,693,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 696; @symbol_moduledef = [system_icon_light__hint_button_right_top,696,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 696; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 697; @position = 18; @symbol_constdef = [filename,697,18,26]; @symbol_type<0> = [String,697,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_dark__hint_button_right_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 698; @position = 18; @symbol_constdef = [dithering,698,18,27]; @symbol_type<0> = [String,698,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 699; @position = 18; @symbol_constdef = [packingFormat,699,18,31]; @symbol_type<0> = [String,699,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 702; @symbol_moduledef = [confirmation_size__body,702,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 702; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 703; @position = 18; @symbol_constdef = [width,703,18,23]; @symbol_type<0> = [Number,703,27,33]; ]
+            const width as Number = 316;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 704; @position = 18; @symbol_constdef = [height,704,18,24]; @symbol_type<0> = [Number,704,28,34]; ]
+            const height as Number = 246;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 707; @symbol_moduledef = [system_icon_positive__check,707,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 707; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 708; @position = 18; @symbol_constdef = [filename,708,18,26]; @symbol_type<0> = [String,708,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr970\\system_icon_positive__check.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 709; @position = 18; @symbol_constdef = [dithering,709,18,27]; @symbol_type<0> = [String,709,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 710; @position = 18; @symbol_constdef = [packingFormat,710,18,31]; @symbol_type<0> = [String,710,35,41]; ]
+            const packingFormat as String = "png";
+        }
+    }
+}
+[ @file = "e:\GarminTacticalHUD\StarterProject\SimpleDataField\bin\gen\006-B4565-00\source\Rez.mcgen"; @line = 1; ]
+<init> {
+}

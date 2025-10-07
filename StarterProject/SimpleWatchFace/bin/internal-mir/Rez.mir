@@ -1,0 +1,1600 @@
+[ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 12; @symbol_moduledef = [Layouts,12,11,18]; ]
+    module Layouts {
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 13; @symbol_functiondef = [WatchFace,13,17,26]; @symbol_param<0> = [dc,13,27,29]; @symbol_param<0>_type<0> = [Graphics,13,33,41]; @symbol_param<0>_type<1> = [Dc,13,42,44]; @symbol_return<0> = [Array,13,49,54]; @symbol_return<1> = [WatchUi,13,55,62]; @symbol_return<2> = [Drawable,13,63,71]; ]
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+e__GarminTacticalHUD_StarterProject_SimpleWatchFace_bin_gen_006_B4533_00_source_Rez_mcgen_13_73_17_8_start:
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 14 12 ]
+            [ "e__GarminTacticalHUD_StarterProject_SimpleWatchFace_bin_gen_006_B4533_00_source_Rez_mcgen_13_73_17_8_start" "e__GarminTacticalHUD_StarterProject_SimpleWatchFace_bin_gen_006_B4533_00_source_Rez_mcgen_13_73_17_8_stop" ]
+            %rez_cmp_local_text_TimeLabel.1 = local;
+            symbol [ rez_cmp_local_text_TimeLabel %rez_cmp_local_text_TimeLabel.1 14 16 44 ];
+            symbol [ WatchUi %tmp.3 14 51 58 ];
+            %tmp.3 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.4 14 59 63 ];
+            %tmp.4 = getv function ? %tmp.3 :Text;
+            %tmp.5 = newd 6;
+            %tmp.7 = const :identifier;
+            symbol [ identifier %tmp.7 14 66 76 const ];
+            %tmp.8 = "TimeLabel";
+            %tmp.9 = dup %tmp.5;
+            %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+            %tmp.12 = const :color;
+            symbol [ color %tmp.12 14 92 97 const ];
+            symbol [ Graphics %tmp.13 14 99 107 ];
+            %tmp.13 = getm $.Toybox.Graphics;
+            symbol [ COLOR_BLUE %tmp.14 14 108 118 ];
+            %tmp.14 = getv %tmp.13 :COLOR_BLUE;
+            %tmp.15 = dup %tmp.10;
+            %tmp.16 = aputv %tmp.15 %tmp.12 %tmp.14;
+            %tmp.18 = const :locX;
+            symbol [ locX %tmp.18 14 121 125 const ];
+            %tmp.19 = 280;
+            %tmp.20 = 0.5;
+            %tmp.21 = mul %tmp.19 %tmp.20;
+            %tmp.22 = dup %tmp.16;
+            %tmp.23 = aputv %tmp.22 %tmp.18 %tmp.21;
+            %tmp.25 = const :locY;
+            symbol [ locY %tmp.25 14 141 145 const ];
+            %tmp.26 = 280;
+            %tmp.27 = lgetv %dc;
+            symbol [ dc %tmp.27 14 155 157 ];
+            symbol [ getFontHeight %tmp.28 14 158 171 ];
+            %tmp.28 = getv function %tmp.27 :getFontHeight;
+            symbol [ Graphics %tmp.29 14 172 180 ];
+            %tmp.29 = getm $.Toybox.Graphics;
+            symbol [ FONT_LARGE %tmp.30 14 181 191 ];
+            %tmp.30 = getv %tmp.29 :FONT_LARGE;
+            %tmp.31 = invoke %tmp.27 %tmp.28(%tmp.30);
+            %tmp.32 = sub %tmp.26 %tmp.31;
+            %tmp.33 = 0.5;
+            %tmp.34 = mul %tmp.32 %tmp.33;
+            %tmp.35 = dup %tmp.23;
+            %tmp.36 = aputv %tmp.35 %tmp.25 %tmp.34;
+            %tmp.38 = const :justification;
+            symbol [ justification %tmp.38 14 203 216 const ];
+            symbol [ Graphics %tmp.39 14 218 226 ];
+            %tmp.39 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.40 14 227 246 ];
+            %tmp.40 = getv %tmp.39 :TEXT_JUSTIFY_CENTER;
+            %tmp.41 = dup %tmp.36;
+            %tmp.42 = aputv %tmp.41 %tmp.38 %tmp.40;
+            %tmp.44 = const :font;
+            symbol [ font %tmp.44 14 249 253 const ];
+            symbol [ Graphics %tmp.45 14 255 263 ];
+            %tmp.45 = getm $.Toybox.Graphics;
+            symbol [ FONT_LARGE %tmp.46 14 264 274 ];
+            %tmp.46 = getv %tmp.45 :FONT_LARGE;
+            %tmp.47 = dup %tmp.42;
+            %tmp.48 = aputv %tmp.47 %tmp.44 %tmp.46;
+            %tmp.1 = newc %tmp.4 (%tmp.48);
+            lputv %rez_cmp_local_text_TimeLabel.1 %tmp.1;
+            symbol [ rez_cmp_local_text_TimeLabel %rez_cmp_local_text_TimeLabel.1 14 16 44 ];
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 16 12 ]
+            %tmp.49 = newa 1 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.49 16 53 58 ];
+            symbol [ WatchUi %tmp.49 16 59 66 ];
+            symbol [ Drawable %tmp.49 16 67 75 ];
+            %tmp.50 = lgetv %rez_cmp_local_text_TimeLabel.1;
+            symbol [ rez_cmp_local_text_TimeLabel %tmp.50 16 20 48 ];
+            %tmp.51 = dup %tmp.49;
+            %tmp.52 = aputv %tmp.51 0 %tmp.50;
+            ret %tmp.52;
+e__GarminTacticalHUD_StarterProject_SimpleWatchFace_bin_gen_006_B4533_00_source_Rez_mcgen_13_73_17_8_stop:
+        }
+    }
+    [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 20; @symbol_moduledef = [Strings,20,11,18]; ]
+    module Strings {
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 20; ]
+        <init> {
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 21; @position = 27; initialized = true; @symbol_vardef = [AppName,21,27,34]; @symbol_type<0> = [ResourceId,21,38,48]; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 24; @symbol_moduledef = [Styles,24,11,17]; ]
+    module Styles {
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 24; ]
+        <init> {
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 25; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,25,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 25; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 26 18 ]
+                symbol [ Graphics %tmp.53 26 34 42 ];
+                %tmp.53 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.54 26 43 62 ];
+                %tmp.54 = getv %tmp.53 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.55 26 63 71 ];
+                %tmp.55 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.56 26 72 92 ];
+                %tmp.56 = getv %tmp.55 :TEXT_JUSTIFY_VCENTER;
+                %tmp.57 = bitor %tmp.54 %tmp.56;
+                putv self :justification %tmp.57;
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 27 18 ]
+                symbol [ Graphics %tmp.58 27 25 33 ];
+                %tmp.58 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.59 27 34 43 ];
+                %tmp.59 = getv %tmp.58 :FONT_TINY;
+                putv self :font %tmp.59;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 26; @position = 18; @symbol_constdef = [justification,26,18,31]; ]
+            const justification;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 27; @position = 18; @symbol_constdef = [font,27,18,22]; ]
+            const font;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 30; @symbol_moduledef = [system_size__menu_header,30,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 30; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 31; @position = 18; @symbol_constdef = [width,31,18,23]; @symbol_type<0> = [Number,31,27,33]; ]
+            const width as Number = 280;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 32; @position = 18; @symbol_constdef = [height,32,18,24]; @symbol_type<0> = [Number,32,28,34]; ]
+            const height as Number = 95;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 35; @symbol_moduledef = [system_loc__hint_button_left_bottom,35,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 35; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 36; @position = 18; @symbol_constdef = [x,36,18,19]; @symbol_type<0> = [Number,36,23,29]; ]
+            const x as Number = 7;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 37; @position = 18; @symbol_constdef = [y,37,18,19]; @symbol_type<0> = [Number,37,23,29]; ]
+            const y as Number = 179;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 40; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,40,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 40; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 41 18 ]
+                symbol [ Graphics %tmp.60 41 34 42 ];
+                %tmp.60 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.61 41 43 62 ];
+                %tmp.61 = getv %tmp.60 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.62 41 63 71 ];
+                %tmp.62 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.63 41 72 92 ];
+                %tmp.63 = getv %tmp.62 :TEXT_JUSTIFY_VCENTER;
+                %tmp.64 = bitor %tmp.61 %tmp.63;
+                putv self :justification %tmp.64;
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 42 18 ]
+                symbol [ Graphics %tmp.65 42 25 33 ];
+                %tmp.65 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.66 42 34 43 ];
+                %tmp.66 = getv %tmp.65 :FONT_TINY;
+                putv self :font %tmp.66;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 41; @position = 18; @symbol_constdef = [justification,41,18,31]; ]
+            const justification;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 42; @position = 18; @symbol_constdef = [font,42,18,22]; ]
+            const font;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 45; @symbol_moduledef = [prompt_loc__body_no_title,45,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 45; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 46; @position = 18; @symbol_constdef = [x,46,18,19]; @symbol_type<0> = [Number,46,23,29]; ]
+            const x as Number = 28;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 47; @position = 18; @symbol_constdef = [y,47,18,19]; @symbol_type<0> = [Number,47,23,29]; ]
+            const y as Number = 28;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 50; @symbol_moduledef = [system_icon_dark__about,50,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 50; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 51; @position = 18; @symbol_constdef = [filename,51,18,26]; @symbol_type<0> = [String,51,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_dark__about.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 52; @position = 18; @symbol_constdef = [compress,52,18,26]; @symbol_type<0> = [String,52,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 53; @position = 18; @symbol_constdef = [dithering,53,18,27]; @symbol_type<0> = [String,53,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 54; @position = 18; @symbol_constdef = [automaticPalette,54,18,34]; @symbol_type<0> = [String,54,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 57; @symbol_moduledef = [system_icon_light__question,57,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 57; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 58; @position = 18; @symbol_constdef = [filename,58,18,26]; @symbol_type<0> = [String,58,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_light__question.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 59; @position = 18; @symbol_constdef = [dithering,59,18,27]; @symbol_type<0> = [String,59,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 62; @symbol_moduledef = [system_loc__hint_button_left_top,62,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 62; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 63; @position = 18; @symbol_constdef = [exclude,63,18,25]; @symbol_type<0> = [Boolean,63,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 66; @symbol_moduledef = [prompt_font__title,66,15,33]; ]
+        module prompt_font__title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 66; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 67 18 ]
+                symbol [ Graphics %tmp.67 67 34 42 ];
+                %tmp.67 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.68 67 43 62 ];
+                %tmp.68 = getv %tmp.67 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.69 67 63 71 ];
+                %tmp.69 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.70 67 72 92 ];
+                %tmp.70 = getv %tmp.69 :TEXT_JUSTIFY_VCENTER;
+                %tmp.71 = bitor %tmp.68 %tmp.70;
+                putv self :justification %tmp.71;
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 68 18 ]
+                symbol [ Graphics %tmp.72 68 25 33 ];
+                %tmp.72 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.73 68 34 43 ];
+                %tmp.73 = getv %tmp.72 :FONT_TINY;
+                putv self :font %tmp.73;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 67; @position = 18; @symbol_constdef = [justification,67,18,31]; ]
+            const justification;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 68; @position = 18; @symbol_constdef = [font,68,18,22]; ]
+            const font;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 71; @symbol_moduledef = [system_icon_dark__discard,71,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 71; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 72; @position = 18; @symbol_constdef = [filename,72,18,26]; @symbol_type<0> = [String,72,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_dark__discard.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 73; @position = 18; @symbol_constdef = [compress,73,18,26]; @symbol_type<0> = [String,73,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 74; @position = 18; @symbol_constdef = [dithering,74,18,27]; @symbol_type<0> = [String,74,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 75; @position = 18; @symbol_constdef = [automaticPalette,75,18,34]; @symbol_type<0> = [String,75,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 78; @symbol_moduledef = [system_size__menu_item,78,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 78; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 79; @position = 18; @symbol_constdef = [width,79,18,23]; @symbol_type<0> = [Number,79,27,33]; ]
+            const width as Number = 280;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 80; @position = 18; @symbol_constdef = [height,80,18,24]; @symbol_type<0> = [Number,80,28,34]; ]
+            const height as Number = 89;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 83; @symbol_moduledef = [system_color_dark__text,83,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 83; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 85 18 ]
+                symbol [ Graphics %tmp.74 85 31 39 ];
+                %tmp.74 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.75 85 40 57 ];
+                %tmp.75 = getv %tmp.74 :COLOR_TRANSPARENT;
+                putv self :background %tmp.75;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 84; @position = 18; @symbol_constdef = [color,84,18,23]; @symbol_type<0> = [Number,84,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 85; @position = 18; @symbol_constdef = [background,85,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 88; @symbol_moduledef = [system_icon_destructive__discard,88,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 88; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 89; @position = 18; @symbol_constdef = [filename,89,18,26]; @symbol_type<0> = [String,89,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_destructive__discard.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 90; @position = 18; @symbol_constdef = [dithering,90,18,27]; @symbol_type<0> = [String,90,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 93; @symbol_moduledef = [system_icon_dark__hint_action_menu,93,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 93; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 94; @position = 18; @symbol_constdef = [filename,94,18,26]; @symbol_type<0> = [String,94,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_dark__hint_button_right_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 95; @position = 18; @symbol_constdef = [dithering,95,18,27]; @symbol_type<0> = [String,95,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 98; @symbol_moduledef = [prompt_size__title,98,15,33]; ]
+        module prompt_size__title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 98; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 99; @position = 18; @symbol_constdef = [width,99,18,23]; @symbol_type<0> = [Number,99,27,33]; ]
+            const width as Number = 224;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 100; @position = 18; @symbol_constdef = [height,100,18,24]; @symbol_type<0> = [Number,100,28,34]; ]
+            const height as Number = 42;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 103; @symbol_moduledef = [confirmation_font__body,103,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 103; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 104 18 ]
+                symbol [ Graphics %tmp.76 104 34 42 ];
+                %tmp.76 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.77 104 43 62 ];
+                %tmp.77 = getv %tmp.76 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.78 104 63 71 ];
+                %tmp.78 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.79 104 72 92 ];
+                %tmp.79 = getv %tmp.78 :TEXT_JUSTIFY_VCENTER;
+                %tmp.80 = bitor %tmp.77 %tmp.79;
+                putv self :justification %tmp.80;
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 105 18 ]
+                symbol [ Graphics %tmp.81 105 25 33 ];
+                %tmp.81 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.82 105 34 43 ];
+                %tmp.82 = getv %tmp.81 :FONT_TINY;
+                putv self :font %tmp.82;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 104; @position = 18; @symbol_constdef = [justification,104,18,31]; ]
+            const justification;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 105; @position = 18; @symbol_constdef = [font,105,18,22]; ]
+            const font;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 108; @symbol_moduledef = [system_color_dark__background,108,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 108; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 109; @position = 18; @symbol_constdef = [color,109,18,23]; @symbol_type<0> = [Number,109,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 110; @position = 18; @symbol_constdef = [background,110,18,28]; @symbol_type<0> = [Number,110,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 113; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,113,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 113; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 114; @position = 18; @symbol_constdef = [filename,114,18,26]; @symbol_type<0> = [String,114,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_destructive__hint_button_left_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 115; @position = 18; @symbol_constdef = [dithering,115,18,27]; @symbol_type<0> = [String,115,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 118; @symbol_moduledef = [system_size__launch_icon,118,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 118; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 119; @position = 18; @symbol_constdef = [scaleX,119,18,24]; @symbol_type<0> = [Number,119,28,34]; ]
+            const scaleX as Number = 40;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 120; @position = 18; @symbol_constdef = [scaleY,120,18,24]; @symbol_type<0> = [Number,120,28,34]; ]
+            const scaleY as Number = 40;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 121; @position = 18; @symbol_constdef = [scaleRelativeTo,121,18,33]; @symbol_type<0> = [String,121,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 124; @symbol_moduledef = [confirmation_input__confirm,124,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 124; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 125 18 ]
+                symbol [ WatchUi %tmp.83 125 27 34 ];
+                %tmp.83 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.84 125 35 44 ];
+                %tmp.84 = getv %tmp.83 :KEY_ENTER;
+                putv self :button %tmp.84;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 125; @position = 18; @symbol_constdef = [button,125,18,24]; ]
+            const button;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 128; @symbol_moduledef = [prompt_font__body_with_title,128,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 128; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 129 18 ]
+                symbol [ Graphics %tmp.85 129 34 42 ];
+                %tmp.85 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.86 129 43 62 ];
+                %tmp.86 = getv %tmp.85 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.86;
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 130 18 ]
+                symbol [ Graphics %tmp.87 130 25 33 ];
+                %tmp.87 = getm $.Toybox.Graphics;
+                symbol [ FONT_GLANCE %tmp.88 130 34 45 ];
+                %tmp.88 = getv %tmp.87 :FONT_GLANCE;
+                putv self :font %tmp.88;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 129; @position = 18; @symbol_constdef = [justification,129,18,31]; ]
+            const justification;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 130; @position = 18; @symbol_constdef = [font,130,18,22]; ]
+            const font;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 133; @symbol_moduledef = [confirmation_loc__body,133,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 133; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 134; @position = 18; @symbol_constdef = [x,134,18,19]; @symbol_type<0> = [Number,134,23,29]; ]
+            const x as Number = 56;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 135; @position = 18; @symbol_constdef = [y,135,18,19]; @symbol_type<0> = [Number,135,23,29]; ]
+            const y as Number = 56;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 138; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,138,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 138; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 139; @position = 18; @symbol_constdef = [filename,139,18,26]; @symbol_type<0> = [String,139,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_destructive__hint_button_left_bottom.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 140; @position = 18; @symbol_constdef = [dithering,140,18,27]; @symbol_type<0> = [String,140,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 143; @symbol_moduledef = [prompt_color_dark__background,143,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 143; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 144; @position = 18; @symbol_constdef = [color,144,18,23]; @symbol_type<0> = [Number,144,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 145; @position = 18; @symbol_constdef = [background,145,18,28]; @symbol_type<0> = [Number,145,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 148; @symbol_moduledef = [system_icon_destructive__hint_action_menu,148,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 148; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 149; @position = 18; @symbol_constdef = [filename,149,18,26]; @symbol_type<0> = [String,149,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 150; @position = 18; @symbol_constdef = [dithering,150,18,27]; @symbol_type<0> = [String,150,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 153; @symbol_moduledef = [system_loc__hint_action_menu,153,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 153; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 154; @position = 18; @symbol_constdef = [x,154,18,19]; @symbol_type<0> = [Number,154,23,29]; ]
+            const x as Number = 222;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 155; @position = 18; @symbol_constdef = [y,155,18,19]; @symbol_type<0> = [Number,155,23,29]; ]
+            const y as Number = 44;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 158; @symbol_moduledef = [confirmation_icon__hint_confirm,158,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 158; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 159; @position = 18; @symbol_constdef = [filename,159,18,26]; @symbol_type<0> = [String,159,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\confirmation_icon__hint_completion.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 160; @position = 18; @symbol_constdef = [dithering,160,18,27]; @symbol_type<0> = [String,160,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 163; @symbol_moduledef = [system_loc__hint_button_left_middle,163,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 163; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 164; @position = 18; @symbol_constdef = [x,164,18,19]; @symbol_type<0> = [Number,164,23,29]; ]
+            const x as Number = 0;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 165; @position = 18; @symbol_constdef = [y,165,18,19]; @symbol_type<0> = [Number,165,23,29]; ]
+            const y as Number = 110;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 168; @symbol_moduledef = [prompt_size__body_no_title,168,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 168; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 169; @position = 18; @symbol_constdef = [width,169,18,23]; @symbol_type<0> = [Number,169,27,33]; ]
+            const width as Number = 224;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 170; @position = 18; @symbol_constdef = [height,170,18,24]; @symbol_type<0> = [Number,170,28,34]; ]
+            const height as Number = 224;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 173; @symbol_moduledef = [system_icon_light__hint_button_left_top,173,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 173; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 174; @position = 18; @symbol_constdef = [filename,174,18,26]; @symbol_type<0> = [String,174,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_light__hint_button_left_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 175; @position = 18; @symbol_constdef = [dithering,175,18,27]; @symbol_type<0> = [String,175,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 178; @symbol_moduledef = [prompt_color_light__background,178,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 178; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 179; @position = 18; @symbol_constdef = [color,179,18,23]; @symbol_type<0> = [Number,179,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 180; @position = 18; @symbol_constdef = [background,180,18,28]; @symbol_type<0> = [Number,180,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 183; @symbol_moduledef = [confirmation_input__delete,183,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 183; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 184 18 ]
+                symbol [ WatchUi %tmp.89 184 27 34 ];
+                %tmp.89 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.90 184 35 44 ];
+                %tmp.90 = getv %tmp.89 :KEY_ENTER;
+                putv self :button %tmp.90;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 184; @position = 18; @symbol_constdef = [button,184,18,24]; ]
+            const button;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 187; @symbol_moduledef = [system_icon_dark__hint_button_left_top,187,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 187; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 188; @position = 18; @symbol_constdef = [filename,188,18,26]; @symbol_type<0> = [String,188,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_dark__hint_button_left_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 189; @position = 18; @symbol_constdef = [dithering,189,18,27]; @symbol_type<0> = [String,189,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 192; @symbol_moduledef = [system_input__action_menu,192,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 192; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 193 18 ]
+                symbol [ WatchUi %tmp.91 193 27 34 ];
+                %tmp.91 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.92 193 35 44 ];
+                %tmp.92 = getv %tmp.91 :KEY_ENTER;
+                putv self :button %tmp.92;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 193; @position = 18; @symbol_constdef = [button,193,18,24]; ]
+            const button;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 196; @symbol_moduledef = [system_icon_light__save,196,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 196; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 197; @position = 18; @symbol_constdef = [filename,197,18,26]; @symbol_type<0> = [String,197,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_light__save.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 198; @position = 18; @symbol_constdef = [dithering,198,18,27]; @symbol_type<0> = [String,198,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 201; @symbol_moduledef = [prompt_color_light__body,201,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 201; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 203 18 ]
+                symbol [ Graphics %tmp.93 203 31 39 ];
+                %tmp.93 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.94 203 40 57 ];
+                %tmp.94 = getv %tmp.93 :COLOR_TRANSPARENT;
+                putv self :background %tmp.94;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 202; @position = 18; @symbol_constdef = [color,202,18,23]; @symbol_type<0> = [Number,202,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 203; @position = 18; @symbol_constdef = [background,203,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 206; @symbol_moduledef = [system_loc__subwindow,206,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 206; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 207; @position = 18; @symbol_constdef = [exclude,207,18,25]; @symbol_type<0> = [Boolean,207,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 210; @symbol_moduledef = [system_icon_light__warning,210,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 210; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 211; @position = 18; @symbol_constdef = [filename,211,18,26]; @symbol_type<0> = [String,211,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_light__warning.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 212; @position = 18; @symbol_constdef = [dithering,212,18,27]; @symbol_type<0> = [String,212,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 215; @symbol_moduledef = [confirmation_color_light__body,215,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 215; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 217 18 ]
+                symbol [ Graphics %tmp.95 217 31 39 ];
+                %tmp.95 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.96 217 40 57 ];
+                %tmp.96 = getv %tmp.95 :COLOR_TRANSPARENT;
+                putv self :background %tmp.96;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 216; @position = 18; @symbol_constdef = [color,216,18,23]; @symbol_type<0> = [Number,216,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 217; @position = 18; @symbol_constdef = [background,217,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 220; @symbol_moduledef = [confirmation_icon_light__hint_keep,220,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 220; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 221; @position = 18; @symbol_constdef = [filename,221,18,26]; @symbol_type<0> = [String,221,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\confirmation_icon__hint_keep.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 222; @position = 18; @symbol_constdef = [dithering,222,18,27]; @symbol_type<0> = [String,222,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 225; @symbol_moduledef = [activity_color_light__background,225,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 225; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 226; @position = 18; @symbol_constdef = [color,226,18,23]; @symbol_type<0> = [Number,226,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 227; @position = 18; @symbol_constdef = [background,227,18,28]; @symbol_type<0> = [Number,227,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 230; @symbol_moduledef = [system_icon_positive__hint_button_right_top,230,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 230; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 231; @position = 18; @symbol_constdef = [filename,231,18,26]; @symbol_type<0> = [String,231,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_positive__hint_button_right_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 232; @position = 18; @symbol_constdef = [dithering,232,18,27]; @symbol_type<0> = [String,232,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 235; @symbol_moduledef = [system_size__screen,235,15,34]; ]
+        module system_size__screen {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 235; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 236; @position = 18; @symbol_constdef = [width,236,18,23]; @symbol_type<0> = [Number,236,27,33]; ]
+            const width as Number = 280;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 237; @position = 18; @symbol_constdef = [height,237,18,24]; @symbol_type<0> = [Number,237,28,34]; ]
+            const height as Number = 280;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 240; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,240,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 240; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 241; @position = 18; @symbol_constdef = [filename,241,18,26]; @symbol_type<0> = [String,241,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_destructive__hint_button_right_bottom.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 242; @position = 18; @symbol_constdef = [dithering,242,18,27]; @symbol_type<0> = [String,242,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 245; @symbol_moduledef = [system_color_light__background,245,15,45]; ]
+        module system_color_light__background {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 245; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 246; @position = 18; @symbol_constdef = [color,246,18,23]; @symbol_type<0> = [Number,246,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 247; @position = 18; @symbol_constdef = [background,247,18,28]; @symbol_type<0> = [Number,247,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 250; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,250,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 250; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 251; @position = 18; @symbol_constdef = [filename,251,18,26]; @symbol_type<0> = [String,251,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 252; @position = 18; @symbol_constdef = [dithering,252,18,27]; @symbol_type<0> = [String,252,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 255; @symbol_moduledef = [confirmation_loc__hint_confirm,255,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 255; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 256; @position = 18; @symbol_constdef = [x,256,18,19]; @symbol_type<0> = [Number,256,23,29]; ]
+            const x as Number = 222;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 257; @position = 18; @symbol_constdef = [y,257,18,19]; @symbol_type<0> = [Number,257,23,29]; ]
+            const y as Number = 44;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 260; @symbol_moduledef = [activity_color_dark__text,260,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 260; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 262 18 ]
+                symbol [ Graphics %tmp.97 262 31 39 ];
+                %tmp.97 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.98 262 40 57 ];
+                %tmp.98 = getv %tmp.97 :COLOR_TRANSPARENT;
+                putv self :background %tmp.98;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 261; @position = 18; @symbol_constdef = [color,261,18,23]; @symbol_type<0> = [Number,261,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 262; @position = 18; @symbol_constdef = [background,262,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 265; @symbol_moduledef = [confirmation_input__keep,265,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 265; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 266 18 ]
+                symbol [ WatchUi %tmp.99 266 27 34 ];
+                %tmp.99 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.100 266 35 43 ];
+                %tmp.100 = getv %tmp.99 :KEY_DOWN;
+                putv self :button %tmp.100;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 266; @position = 18; @symbol_constdef = [button,266,18,24]; ]
+            const button;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 269; @symbol_moduledef = [prompt_loc__body_with_title,269,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 269; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 270; @position = 18; @symbol_constdef = [x,270,18,19]; @symbol_type<0> = [Number,270,23,29]; ]
+            const x as Number = 28;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 271; @position = 18; @symbol_constdef = [y,271,18,19]; @symbol_type<0> = [Number,271,23,29]; ]
+            const y as Number = 84;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 274; @symbol_moduledef = [system_icon_dark__search,274,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 274; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 275; @position = 18; @symbol_constdef = [filename,275,18,26]; @symbol_type<0> = [String,275,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_dark__search.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 276; @position = 18; @symbol_constdef = [compress,276,18,26]; @symbol_type<0> = [String,276,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 277; @position = 18; @symbol_constdef = [dithering,277,18,27]; @symbol_type<0> = [String,277,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 278; @position = 18; @symbol_constdef = [automaticPalette,278,18,34]; @symbol_type<0> = [String,278,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 281; @symbol_moduledef = [activity_color_light__text,281,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 281; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 283 18 ]
+                symbol [ Graphics %tmp.101 283 31 39 ];
+                %tmp.101 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.102 283 40 57 ];
+                %tmp.102 = getv %tmp.101 :COLOR_TRANSPARENT;
+                putv self :background %tmp.102;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 282; @position = 18; @symbol_constdef = [color,282,18,23]; @symbol_type<0> = [Number,282,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 283; @position = 18; @symbol_constdef = [background,283,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 286; @symbol_moduledef = [confirmation_icon__hint_keep,286,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 286; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 287; @position = 18; @symbol_constdef = [filename,287,18,26]; @symbol_type<0> = [String,287,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\confirmation_icon__hint_keep.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 288; @position = 18; @symbol_constdef = [dithering,288,18,27]; @symbol_type<0> = [String,288,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 291; @symbol_moduledef = [system_icon_dark__save,291,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 291; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 292; @position = 18; @symbol_constdef = [filename,292,18,26]; @symbol_type<0> = [String,292,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_dark__save.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 293; @position = 18; @symbol_constdef = [compress,293,18,26]; @symbol_type<0> = [String,293,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 294; @position = 18; @symbol_constdef = [dithering,294,18,27]; @symbol_type<0> = [String,294,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 295; @position = 18; @symbol_constdef = [automaticPalette,295,18,34]; @symbol_type<0> = [String,295,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 298; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,298,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 298; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 299; @position = 18; @symbol_constdef = [filename,299,18,26]; @symbol_type<0> = [String,299,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_destructive__hint_button_left_middle.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 300; @position = 18; @symbol_constdef = [dithering,300,18,27]; @symbol_type<0> = [String,300,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 303; @symbol_moduledef = [system_icon_light__search,303,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 303; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 304; @position = 18; @symbol_constdef = [filename,304,18,26]; @symbol_type<0> = [String,304,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_light__search.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 305; @position = 18; @symbol_constdef = [dithering,305,18,27]; @symbol_type<0> = [String,305,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 308; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,308,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 308; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 309; @position = 18; @symbol_constdef = [filename,309,18,26]; @symbol_type<0> = [String,309,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_dark__hint_button_left_bottom.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 310; @position = 18; @symbol_constdef = [dithering,310,18,27]; @symbol_type<0> = [String,310,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 313; @symbol_moduledef = [system_icon_positive__hint_button_left_top,313,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 313; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 314; @position = 18; @symbol_constdef = [filename,314,18,26]; @symbol_type<0> = [String,314,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_positive__hint_button_left_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 315; @position = 18; @symbol_constdef = [dithering,315,18,27]; @symbol_type<0> = [String,315,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 318; @symbol_moduledef = [system_loc__hint_button_right_bottom,318,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 318; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 319; @position = 18; @symbol_constdef = [x,319,18,19]; @symbol_type<0> = [Number,319,23,29]; ]
+            const x as Number = 222;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 320; @position = 18; @symbol_constdef = [y,320,18,19]; @symbol_type<0> = [Number,320,23,29]; ]
+            const y as Number = 178;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 323; @symbol_moduledef = [confirmation_icon_dark__hint_reject,323,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 323; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 324; @position = 18; @symbol_constdef = [filename,324,18,26]; @symbol_type<0> = [String,324,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\confirmation_icon__hint_reject.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 325; @position = 18; @symbol_constdef = [dithering,325,18,27]; @symbol_type<0> = [String,325,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 328; @symbol_moduledef = [confirmation_color_dark__body,328,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 328; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 330 18 ]
+                symbol [ Graphics %tmp.103 330 31 39 ];
+                %tmp.103 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.104 330 40 57 ];
+                %tmp.104 = getv %tmp.103 :COLOR_TRANSPARENT;
+                putv self :background %tmp.104;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 329; @position = 18; @symbol_constdef = [color,329,18,23]; @symbol_type<0> = [Number,329,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 330; @position = 18; @symbol_constdef = [background,330,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 333; @symbol_moduledef = [confirmation_icon_light__hint_confirm,333,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 333; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 334; @position = 18; @symbol_constdef = [filename,334,18,26]; @symbol_type<0> = [String,334,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\confirmation_icon__hint_completion.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 335; @position = 18; @symbol_constdef = [dithering,335,18,27]; @symbol_type<0> = [String,335,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 338; @symbol_moduledef = [prompt_color_dark__title,338,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 338; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 340 18 ]
+                symbol [ Graphics %tmp.105 340 31 39 ];
+                %tmp.105 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.106 340 40 57 ];
+                %tmp.106 = getv %tmp.105 :COLOR_TRANSPARENT;
+                putv self :background %tmp.106;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 339; @position = 18; @symbol_constdef = [color,339,18,23]; @symbol_type<0> = [Number,339,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 340; @position = 18; @symbol_constdef = [background,340,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 343; @symbol_moduledef = [system_icon_destructive__cancel,343,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 343; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 344; @position = 18; @symbol_constdef = [filename,344,18,26]; @symbol_type<0> = [String,344,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_destructive__cancel.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 345; @position = 18; @symbol_constdef = [dithering,345,18,27]; @symbol_type<0> = [String,345,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 348; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,348,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 348; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 349; @position = 18; @symbol_constdef = [filename,349,18,26]; @symbol_type<0> = [String,349,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 350; @position = 18; @symbol_constdef = [dithering,350,18,27]; @symbol_type<0> = [String,350,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 353; @symbol_moduledef = [prompt_loc__title,353,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 353; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 354; @position = 18; @symbol_constdef = [x,354,18,19]; @symbol_type<0> = [Number,354,23,29]; ]
+            const x as Number = 28;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 355; @position = 18; @symbol_constdef = [y,355,18,19]; @symbol_type<0> = [Number,355,23,29]; ]
+            const y as Number = 21;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 358; @symbol_moduledef = [confirmation_font_enhanced_readability__body,358,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 358; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 359 18 ]
+                symbol [ Graphics %tmp.107 359 34 42 ];
+                %tmp.107 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.108 359 43 62 ];
+                %tmp.108 = getv %tmp.107 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.109 359 63 71 ];
+                %tmp.109 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.110 359 72 92 ];
+                %tmp.110 = getv %tmp.109 :TEXT_JUSTIFY_VCENTER;
+                %tmp.111 = bitor %tmp.108 %tmp.110;
+                putv self :justification %tmp.111;
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 360 18 ]
+                symbol [ Graphics %tmp.112 360 25 33 ];
+                %tmp.112 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.113 360 34 44 ];
+                %tmp.113 = getv %tmp.112 :FONT_SMALL;
+                putv self :font %tmp.113;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 359; @position = 18; @symbol_constdef = [justification,359,18,31]; ]
+            const justification;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 360; @position = 18; @symbol_constdef = [font,360,18,22]; ]
+            const font;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 363; @symbol_moduledef = [prompt_color_light__title,363,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 363; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 365 18 ]
+                symbol [ Graphics %tmp.114 365 31 39 ];
+                %tmp.114 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.115 365 40 57 ];
+                %tmp.115 = getv %tmp.114 :COLOR_TRANSPARENT;
+                putv self :background %tmp.115;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 364; @position = 18; @symbol_constdef = [color,364,18,23]; @symbol_type<0> = [Number,364,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 365; @position = 18; @symbol_constdef = [background,365,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 368; @symbol_moduledef = [system_icon_dark__hint_button_right_top,368,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 368; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 369; @position = 18; @symbol_constdef = [filename,369,18,26]; @symbol_type<0> = [String,369,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_dark__hint_button_right_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 370; @position = 18; @symbol_constdef = [dithering,370,18,27]; @symbol_type<0> = [String,370,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 373; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,373,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 373; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 374; @position = 18; @symbol_constdef = [filename,374,18,26]; @symbol_type<0> = [String,374,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_dark__hint_button_left_middle.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 375; @position = 18; @symbol_constdef = [dithering,375,18,27]; @symbol_type<0> = [String,375,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 378; @symbol_moduledef = [confirmation_icon_dark__hint_keep,378,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 378; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 379; @position = 18; @symbol_constdef = [filename,379,18,26]; @symbol_type<0> = [String,379,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\confirmation_icon__hint_keep.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 380; @position = 18; @symbol_constdef = [dithering,380,18,27]; @symbol_type<0> = [String,380,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 383; @symbol_moduledef = [system_icon_light__cancel,383,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 383; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 384; @position = 18; @symbol_constdef = [filename,384,18,26]; @symbol_type<0> = [String,384,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_light__cancel.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 385; @position = 18; @symbol_constdef = [dithering,385,18,27]; @symbol_type<0> = [String,385,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 388; @symbol_moduledef = [confirmation_icon_light__hint_reject,388,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 388; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 389; @position = 18; @symbol_constdef = [filename,389,18,26]; @symbol_type<0> = [String,389,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\confirmation_icon__hint_reject.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 390; @position = 18; @symbol_constdef = [dithering,390,18,27]; @symbol_type<0> = [String,390,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 393; @symbol_moduledef = [system_icon_light__about,393,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 393; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 394; @position = 18; @symbol_constdef = [filename,394,18,26]; @symbol_type<0> = [String,394,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_light__about.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 395; @position = 18; @symbol_constdef = [dithering,395,18,27]; @symbol_type<0> = [String,395,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 398; @symbol_moduledef = [system_size__toast_icon,398,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 398; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 399; @position = 18; @symbol_constdef = [scaleX,399,18,24]; @symbol_type<0> = [Number,399,28,34]; ]
+            const scaleX as Number = 40;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 400; @position = 18; @symbol_constdef = [scaleY,400,18,24]; @symbol_type<0> = [Number,400,28,34]; ]
+            const scaleY as Number = 40;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 401; @position = 18; @symbol_constdef = [scaleRelativeTo,401,18,33]; @symbol_type<0> = [String,401,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 404; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,404,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 404; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 405; @position = 18; @symbol_constdef = [exclude,405,18,25]; @symbol_type<0> = [Boolean,405,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 408; @symbol_moduledef = [confirmation_icon__hint_reject,408,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 408; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 409; @position = 18; @symbol_constdef = [filename,409,18,26]; @symbol_type<0> = [String,409,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\confirmation_icon__hint_reject.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 410; @position = 18; @symbol_constdef = [dithering,410,18,27]; @symbol_type<0> = [String,410,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 413; @symbol_moduledef = [system_icon_light__hint_action_menu,413,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 413; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 414; @position = 18; @symbol_constdef = [filename,414,18,26]; @symbol_type<0> = [String,414,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_light__hint_button_right_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 415; @position = 18; @symbol_constdef = [dithering,415,18,27]; @symbol_type<0> = [String,415,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 418; @symbol_moduledef = [system_icon_light__hint_button_right_middle,418,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 418; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 419; @position = 18; @symbol_constdef = [exclude,419,18,25]; @symbol_type<0> = [Boolean,419,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 422; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,422,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 422; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 423; @position = 18; @symbol_constdef = [exclude,423,18,25]; @symbol_type<0> = [Boolean,423,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 426; @symbol_moduledef = [confirmation_loc__hint_reject,426,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 426; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 427; @position = 18; @symbol_constdef = [x,427,18,19]; @symbol_type<0> = [Number,427,23,29]; ]
+            const x as Number = 7;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 428; @position = 18; @symbol_constdef = [y,428,18,19]; @symbol_type<0> = [Number,428,23,29]; ]
+            const y as Number = 179;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 429; @position = 18; @symbol_constdef = [horizontalJustification,429,18,41]; @symbol_type<0> = [String,429,45,51]; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 432; @symbol_moduledef = [confirmation_icon_dark__hint_delete,432,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 432; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 433; @position = 18; @symbol_constdef = [filename,433,18,26]; @symbol_type<0> = [String,433,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\confirmation_icon__hint_delete.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 434; @position = 18; @symbol_constdef = [dithering,434,18,27]; @symbol_type<0> = [String,434,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 437; @symbol_moduledef = [activity_color_dark__background,437,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 437; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 438; @position = 18; @symbol_constdef = [color,438,18,23]; @symbol_type<0> = [Number,438,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 439; @position = 18; @symbol_constdef = [background,439,18,28]; @symbol_type<0> = [Number,439,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 442; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,442,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 442; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 443; @position = 18; @symbol_constdef = [filename,443,18,26]; @symbol_type<0> = [String,443,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_light__hint_button_left_bottom.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 444; @position = 18; @symbol_constdef = [dithering,444,18,27]; @symbol_type<0> = [String,444,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 447; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,447,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 447; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 448; @position = 18; @symbol_constdef = [filename,448,18,26]; @symbol_type<0> = [String,448,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_positive__hint_button_left_middle.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 449; @position = 18; @symbol_constdef = [dithering,449,18,27]; @symbol_type<0> = [String,449,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 452; @symbol_moduledef = [system_size__menu_icon,452,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 452; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 453; @position = 18; @symbol_constdef = [scaleX,453,18,24]; @symbol_type<0> = [Number,453,28,34]; ]
+            const scaleX as Number = 45;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 454; @position = 18; @symbol_constdef = [scaleY,454,18,24]; @symbol_type<0> = [Number,454,28,34]; ]
+            const scaleY as Number = 76;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 455; @position = 18; @symbol_constdef = [scaleRelativeTo,455,18,33]; @symbol_type<0> = [String,455,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 458; @symbol_moduledef = [system_icon_destructive__warning,458,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 458; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 459; @position = 18; @symbol_constdef = [filename,459,18,26]; @symbol_type<0> = [String,459,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_destructive__warning.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 460; @position = 18; @symbol_constdef = [dithering,460,18,27]; @symbol_type<0> = [String,460,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 463; @symbol_moduledef = [system_loc__hint_button_right_middle,463,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 463; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 464; @position = 18; @symbol_constdef = [exclude,464,18,25]; @symbol_type<0> = [Boolean,464,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 467; @symbol_moduledef = [system_icon_dark__cancel,467,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 467; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 468; @position = 18; @symbol_constdef = [filename,468,18,26]; @symbol_type<0> = [String,468,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_dark__cancel.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 469; @position = 18; @symbol_constdef = [compress,469,18,26]; @symbol_type<0> = [String,469,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 470; @position = 18; @symbol_constdef = [dithering,470,18,27]; @symbol_type<0> = [String,470,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 471; @position = 18; @symbol_constdef = [automaticPalette,471,18,34]; @symbol_type<0> = [String,471,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 474; @symbol_moduledef = [prompt_size__body_with_title,474,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 474; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 475; @position = 18; @symbol_constdef = [width,475,18,23]; @symbol_type<0> = [Number,475,27,33]; ]
+            const width as Number = 224;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 476; @position = 18; @symbol_constdef = [height,476,18,24]; @symbol_type<0> = [Number,476,28,34]; ]
+            const height as Number = 168;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 479; @symbol_moduledef = [system_loc__hint_button_right_top,479,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 479; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 480; @position = 18; @symbol_constdef = [x,480,18,19]; @symbol_type<0> = [Number,480,23,29]; ]
+            const x as Number = 222;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 481; @position = 18; @symbol_constdef = [y,481,18,19]; @symbol_type<0> = [Number,481,23,29]; ]
+            const y as Number = 44;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 484; @symbol_moduledef = [system_color_light__text,484,15,39]; ]
+        module system_color_light__text {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 484; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 486 18 ]
+                symbol [ Graphics %tmp.116 486 31 39 ];
+                %tmp.116 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.117 486 40 57 ];
+                %tmp.117 = getv %tmp.116 :COLOR_TRANSPARENT;
+                putv self :background %tmp.117;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 485; @position = 18; @symbol_constdef = [color,485,18,23]; @symbol_type<0> = [Number,485,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 486; @position = 18; @symbol_constdef = [background,486,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 489; @symbol_moduledef = [system_icon_light__check,489,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 489; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 490; @position = 18; @symbol_constdef = [filename,490,18,26]; @symbol_type<0> = [String,490,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_light__check.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 491; @position = 18; @symbol_constdef = [dithering,491,18,27]; @symbol_type<0> = [String,491,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 494; @symbol_moduledef = [confirmation_input__reject,494,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 494; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 495 18 ]
+                symbol [ WatchUi %tmp.118 495 27 34 ];
+                %tmp.118 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.119 495 35 43 ];
+                %tmp.119 = getv %tmp.118 :KEY_DOWN;
+                putv self :button %tmp.119;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 495; @position = 18; @symbol_constdef = [button,495,18,24]; ]
+            const button;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 498; @symbol_moduledef = [system_icon_light__revert,498,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 498; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 499; @position = 18; @symbol_constdef = [filename,499,18,26]; @symbol_type<0> = [String,499,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_light__revert.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 500; @position = 18; @symbol_constdef = [dithering,500,18,27]; @symbol_type<0> = [String,500,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 503; @symbol_moduledef = [system_size__subwindow,503,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 503; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 504; @position = 18; @symbol_constdef = [exclude,504,18,25]; @symbol_type<0> = [Boolean,504,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 507; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,507,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 507; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 508; @position = 18; @symbol_constdef = [filename,508,18,26]; @symbol_type<0> = [String,508,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_positive__hint_button_left_bottom.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 509; @position = 18; @symbol_constdef = [dithering,509,18,27]; @symbol_type<0> = [String,509,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 512; @symbol_moduledef = [system_icon_dark__check,512,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 512; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 513; @position = 18; @symbol_constdef = [filename,513,18,26]; @symbol_type<0> = [String,513,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_dark__check.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 514; @position = 18; @symbol_constdef = [compress,514,18,26]; @symbol_type<0> = [String,514,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 515; @position = 18; @symbol_constdef = [dithering,515,18,27]; @symbol_type<0> = [String,515,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 516; @position = 18; @symbol_constdef = [automaticPalette,516,18,34]; @symbol_type<0> = [String,516,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 519; @symbol_moduledef = [confirmation_loc__hint_keep,519,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 519; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 520; @position = 18; @symbol_constdef = [x,520,18,19]; @symbol_type<0> = [Number,520,23,29]; ]
+            const x as Number = 7;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 521; @position = 18; @symbol_constdef = [y,521,18,19]; @symbol_type<0> = [Number,521,23,29]; ]
+            const y as Number = 179;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 522; @position = 18; @symbol_constdef = [horizontalJustification,522,18,41]; @symbol_type<0> = [String,522,45,51]; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 525; @symbol_moduledef = [confirmation_loc__hint_delete,525,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 525; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 526; @position = 18; @symbol_constdef = [x,526,18,19]; @symbol_type<0> = [Number,526,23,29]; ]
+            const x as Number = 222;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 527; @position = 18; @symbol_constdef = [y,527,18,19]; @symbol_type<0> = [Number,527,23,29]; ]
+            const y as Number = 44;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 530; @symbol_moduledef = [system_icon_positive__hint_action_menu,530,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 530; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 531; @position = 18; @symbol_constdef = [filename,531,18,26]; @symbol_type<0> = [String,531,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_positive__hint_button_right_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 532; @position = 18; @symbol_constdef = [dithering,532,18,27]; @symbol_type<0> = [String,532,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 535; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,535,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 535; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 536; @position = 18; @symbol_constdef = [exclude,536,18,25]; @symbol_type<0> = [Boolean,536,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 539; @symbol_moduledef = [system_icon_light__hint_button_left_middle,539,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 539; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 540; @position = 18; @symbol_constdef = [filename,540,18,26]; @symbol_type<0> = [String,540,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_light__hint_button_left_middle.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 541; @position = 18; @symbol_constdef = [dithering,541,18,27]; @symbol_type<0> = [String,541,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 544; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,544,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 544; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 545; @position = 18; @symbol_constdef = [filename,545,18,26]; @symbol_type<0> = [String,545,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 546; @position = 18; @symbol_constdef = [dithering,546,18,27]; @symbol_type<0> = [String,546,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 549; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,549,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 549; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 550; @position = 18; @symbol_constdef = [filename,550,18,26]; @symbol_type<0> = [String,550,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 551; @position = 18; @symbol_constdef = [dithering,551,18,27]; @symbol_type<0> = [String,551,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 554; @symbol_moduledef = [system_icon_dark__revert,554,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 554; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 555; @position = 18; @symbol_constdef = [filename,555,18,26]; @symbol_type<0> = [String,555,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_dark__revert.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 556; @position = 18; @symbol_constdef = [compress,556,18,26]; @symbol_type<0> = [String,556,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 557; @position = 18; @symbol_constdef = [dithering,557,18,27]; @symbol_type<0> = [String,557,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 558; @position = 18; @symbol_constdef = [automaticPalette,558,18,34]; @symbol_type<0> = [String,558,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 561; @symbol_moduledef = [confirmation_icon_light__hint_delete,561,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 561; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 562; @position = 18; @symbol_constdef = [filename,562,18,26]; @symbol_type<0> = [String,562,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\confirmation_icon__hint_delete.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 563; @position = 18; @symbol_constdef = [dithering,563,18,27]; @symbol_type<0> = [String,563,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 566; @symbol_moduledef = [system_icon_dark__question,566,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 566; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 567; @position = 18; @symbol_constdef = [filename,567,18,26]; @symbol_type<0> = [String,567,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_dark__question.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 568; @position = 18; @symbol_constdef = [compress,568,18,26]; @symbol_type<0> = [String,568,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 569; @position = 18; @symbol_constdef = [dithering,569,18,27]; @symbol_type<0> = [String,569,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 570; @position = 18; @symbol_constdef = [automaticPalette,570,18,34]; @symbol_type<0> = [String,570,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 573; @symbol_moduledef = [system_icon_light__discard,573,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 573; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 574; @position = 18; @symbol_constdef = [filename,574,18,26]; @symbol_type<0> = [String,574,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_light__discard.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 575; @position = 18; @symbol_constdef = [dithering,575,18,27]; @symbol_type<0> = [String,575,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 578; @symbol_moduledef = [device_info,578,15,26]; ]
+        module device_info {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 578; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 580 18 ]
+                symbol [ Toybox %tmp.121 580 32 38 ];
+                %tmp.121 = getv ? :Toybox;
+                symbol [ System %tmp.122 580 39 45 ];
+                %tmp.122 = getv %tmp.121 :System;
+                symbol [ SCREEN_SHAPE_ROUND %tmp.123 580 46 64 ];
+                %tmp.123 = getv %tmp.122 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.123;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 579; @position = 18; @symbol_constdef = [screenWidth,579,18,29]; @symbol_type<0> = [Number,579,33,39]; ]
+            const screenWidth as Number = 280;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 580; @position = 18; @symbol_constdef = [screenShape,580,18,29]; ]
+            const screenShape;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 581; @position = 18; @symbol_constdef = [hasNightMode,581,18,30]; @symbol_type<0> = [Boolean,581,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 582; @position = 18; @symbol_constdef = [hasGpu,582,18,24]; @symbol_type<0> = [Boolean,582,28,35]; ]
+            const hasGpu as Boolean = true;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 583; @position = 18; @symbol_constdef = [screenHeight,583,18,30]; @symbol_type<0> = [Number,583,34,40]; ]
+            const screenHeight as Number = 280;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 584; @position = 18; @symbol_constdef = [hasTouchScreen,584,18,32]; @symbol_type<0> = [Boolean,584,36,43]; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 585; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,585,18,44]; @symbol_type<0> = [Boolean,585,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = false;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 588; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,588,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 588; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 589; @position = 18; @symbol_constdef = [filename,589,18,26]; @symbol_type<0> = [String,589,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\confirmation_icon__hint_completion.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 590; @position = 18; @symbol_constdef = [dithering,590,18,27]; @symbol_type<0> = [String,590,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 593; @symbol_moduledef = [prompt_font__body_no_title,593,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 593; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 594 18 ]
+                symbol [ Graphics %tmp.124 594 34 42 ];
+                %tmp.124 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.125 594 43 62 ];
+                %tmp.125 = getv %tmp.124 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.126 594 63 71 ];
+                %tmp.126 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.127 594 72 92 ];
+                %tmp.127 = getv %tmp.126 :TEXT_JUSTIFY_VCENTER;
+                %tmp.128 = bitor %tmp.125 %tmp.127;
+                putv self :justification %tmp.128;
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 595 18 ]
+                symbol [ Graphics %tmp.129 595 25 33 ];
+                %tmp.129 = getm $.Toybox.Graphics;
+                symbol [ FONT_GLANCE %tmp.130 595 34 45 ];
+                %tmp.130 = getv %tmp.129 :FONT_GLANCE;
+                putv self :font %tmp.130;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 594; @position = 18; @symbol_constdef = [justification,594,18,31]; ]
+            const justification;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 595; @position = 18; @symbol_constdef = [font,595,18,22]; ]
+            const font;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 598; @symbol_moduledef = [prompt_size__title_icon,598,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 598; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 599; @position = 18; @symbol_constdef = [scaleX,599,18,24]; @symbol_type<0> = [Float,599,28,33]; ]
+            const scaleX as Float = 0.15;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 600; @position = 18; @symbol_constdef = [scaleRelativeTo,600,18,33]; @symbol_type<0> = [String,600,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 603; @symbol_moduledef = [system_icon_dark__warning,603,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 603; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 604; @position = 18; @symbol_constdef = [filename,604,18,26]; @symbol_type<0> = [String,604,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_dark__warning.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 605; @position = 18; @symbol_constdef = [compress,605,18,26]; @symbol_type<0> = [String,605,30,36]; ]
+            const compress as String = "true";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 606; @position = 18; @symbol_constdef = [dithering,606,18,27]; @symbol_type<0> = [String,606,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 607; @position = 18; @symbol_constdef = [automaticPalette,607,18,34]; @symbol_type<0> = [String,607,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 610; @symbol_moduledef = [prompt_loc__title_icon,610,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 610; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 611; @position = 18; @symbol_constdef = [x,611,18,19]; @symbol_type<0> = [Number,611,23,29]; ]
+            const x as Number = 140;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 612; @position = 18; @symbol_constdef = [y,612,18,19]; @symbol_type<0> = [Number,612,23,29]; ]
+            const y as Number = 42;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 613; @position = 18; @symbol_constdef = [horizontalJustification,613,18,41]; @symbol_type<0> = [String,613,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 614; @position = 18; @symbol_constdef = [verticalJustification,614,18,39]; @symbol_type<0> = [String,614,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 617; @symbol_moduledef = [prompt_font_enhanced_readability__title,617,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 617; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 618 18 ]
+                symbol [ Graphics %tmp.131 618 34 42 ];
+                %tmp.131 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.132 618 43 62 ];
+                %tmp.132 = getv %tmp.131 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.133 618 63 71 ];
+                %tmp.133 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.134 618 72 92 ];
+                %tmp.134 = getv %tmp.133 :TEXT_JUSTIFY_VCENTER;
+                %tmp.135 = bitor %tmp.132 %tmp.134;
+                putv self :justification %tmp.135;
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 619 18 ]
+                symbol [ Graphics %tmp.136 619 25 33 ];
+                %tmp.136 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.137 619 34 44 ];
+                %tmp.137 = getv %tmp.136 :FONT_SMALL;
+                putv self :font %tmp.137;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 618; @position = 18; @symbol_constdef = [justification,618,18,31]; ]
+            const justification;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 619; @position = 18; @symbol_constdef = [font,619,18,22]; ]
+            const font;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 622; @symbol_moduledef = [prompt_color_dark__body,622,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 622; ]
+            <init> {
+[ "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen" 624 18 ]
+                symbol [ Graphics %tmp.138 624 31 39 ];
+                %tmp.138 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.139 624 40 57 ];
+                %tmp.139 = getv %tmp.138 :COLOR_TRANSPARENT;
+                putv self :background %tmp.139;
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 623; @position = 18; @symbol_constdef = [color,623,18,23]; @symbol_type<0> = [Number,623,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 624; @position = 18; @symbol_constdef = [background,624,18,28]; ]
+            const background;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 627; @symbol_moduledef = [confirmation_icon__hint_delete,627,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 627; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 628; @position = 18; @symbol_constdef = [filename,628,18,26]; @symbol_type<0> = [String,628,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\confirmation_icon__hint_delete.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 629; @position = 18; @symbol_constdef = [dithering,629,18,27]; @symbol_type<0> = [String,629,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 632; @symbol_moduledef = [system_icon_light__hint_button_right_top,632,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 632; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 633; @position = 18; @symbol_constdef = [filename,633,18,26]; @symbol_type<0> = [String,633,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_light__hint_button_right_top.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 634; @position = 18; @symbol_constdef = [dithering,634,18,27]; @symbol_type<0> = [String,634,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 637; @symbol_moduledef = [confirmation_size__body,637,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 637; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 638; @position = 18; @symbol_constdef = [width,638,18,23]; @symbol_type<0> = [Number,638,27,33]; ]
+            const width as Number = 168;
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 639; @position = 18; @symbol_constdef = [height,639,18,24]; @symbol_type<0> = [Number,639,28,34]; ]
+            const height as Number = 168;
+        }
+        [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 642; @symbol_moduledef = [system_icon_positive__check,642,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 642; ]
+            <init> {
+            }
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 643; @position = 18; @symbol_constdef = [filename,643,18,26]; @symbol_type<0> = [String,643,30,36]; ]
+            const filename as String = "C:\\Users\\TedBjerregaard\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix8solar51mm\\system_icon_positive__check.svg";
+            [ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 644; @position = 18; @symbol_constdef = [dithering,644,18,27]; @symbol_type<0> = [String,644,31,37]; ]
+            const dithering as String = "none";
+        }
+    }
+}
+[ @file = "e:\GarminTacticalHUD\StarterProject\SimpleWatchFace\bin\gen\006-B4533-00\source\Rez.mcgen"; @line = 1; ]
+<init> {
+}
